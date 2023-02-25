@@ -1306,13 +1306,14 @@ button,
 }
 
 .main-header {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
-  background-image: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-  background-image: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(4, 24, 39, 0) 0, #041827 18px);
+  background-image: linear-gradient(0deg, rgba(4, 24, 39, 0) 0, #041827 18px);
   padding-top: 30px;
   padding-bottom: 35px;
   color: #f2f5f7;
   line-height: 18px;
+  position: sticky;
+  top: 0;
 }
 
 .main-header__grid-wrapper {
@@ -1323,6 +1324,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-items: start;
   gap: 30px;
 }
 
