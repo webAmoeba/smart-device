@@ -3,7 +3,7 @@
   font-weight: 400;
   font-family: "Rouble";
   font-display: swap;
-  src: local("Rouble")
+  src:
     url("../fonts/rouble.woff2") format("woff2"),
     url("../fonts/rouble.woff") format("woff");
 }
@@ -13,7 +13,7 @@
   font-weight: 400;
   font-family: "PT Mono";
   font-display: swap;
-  src: local("PT Mono")
+  src:
     url("../fonts/PTMono-Regular.woff2") format("woff2"),
     url("../fonts/PTMono-Regular.woff") format("woff");
 }
@@ -23,7 +23,7 @@
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: local("Roboto Condensed")
+  src:
     url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
     url("../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
@@ -33,7 +33,7 @@
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: local("Roboto Condensed")
+  src:
     url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
     url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
@@ -43,7 +43,7 @@
   font-weight: 500;
   font-family: "Roboto";
   font-display: swap;
-  src: local("Roboto")
+  src:
     url("../fonts/Roboto-Medium.woff2") format("woff2"),
     url("../fonts/Roboto-Medium.woff") format("woff");
 }

@@ -1,0 +1,57 @@
+.main-header {
+  background-image: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  padding-top: 30px;
+  padding-bottom: 35px;
+  color: $second-color;
+  line-height: 18px;
+}
+
+.main-header__flex-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr 2fr;
+  justify-items: start;
+  align-items: center;
+  gap: 30px;
+}
+
+.main-header__main-logo-link {
+  line-height: 0;
+}
+
+.main-header__main-logo {
+}
+
+.main-header__email,
+.main-header__phone {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  padding: 0 6px 8px;
+  color: $second-color;
+}
+
+.main-header__email {
+}
+
+.main-header__phone {
+}
+
+.main-header__button {
+  justify-self: start;
+  padding: 11px 16px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+  background-color: transparent;
+  border: 1px solid $second-color;
+  border-radius: 3px;
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $second-color;
+  cursor: pointer;
+}
