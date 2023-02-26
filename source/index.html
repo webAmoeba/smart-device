@@ -70,8 +70,8 @@
           <div class="main-footer__logo-and-social-links">
             <a class="main-footer__main-logo-link" href="index.html">
               <picture>
-                <source srcset="./img/main-logo/main-logo.webp 1x, ./img/main-logo/main-logo@2x.webp 2x">
-                <source srcset="./img/main-logo/main-logo.png 1x, ./img/main-logo/main-logo@2x.png 2x">
+                <source media="(min-width: 320px)" srcset="./img/main-logo/main-logo.webp 1x, ./img/main-logo/main-logo@2x.webp 2x">
+                <source media="(min-width: 320px)" srcset="./img/main-logo/main-logo.png 1x, ./img/main-logo/main-logo@2x.png 2x">
                 <img class="main-footer__main-logo" width="215" height="55" src="./img/main-logo/main-logo.png"
                   alt="Ссылка на главную страницу.">
               </picture>
@@ -79,6 +79,7 @@
             <ul class="main-footer__social-links-list">
               <li class="main-footer__social-link-item">
                 <a class="main-footer__social-link" href="ok.ru">
+                  <span class="visually-hidden">Ссылка на одноклассники</span>
                   <svg class="main-footer__social-icon-svg" width="30" height="30" aria-hidden="true" fill="#f8fdff">
                     <use xlink:href="img/sprite.svg#ok-ru"></use>
                   </svg>
@@ -86,12 +87,14 @@
               </li>
               <li class="main-footer__social-link-item">
                 <a class="main-footer__social-link" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Ссылка на профиль Академии во вконтакте</span>
                   <svg class="main-footer__social-icon-svg" width="30" height="30" aria-hidden="true" fill="#f8fdff">
                     <use xlink:href="img/sprite.svg#vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="main-footer__social-link-item">
+                <span class="visually-hidden">Ссылка на профиль Академии в пинтерест</span>
                 <a class="main-footer__social-link" href="https://ru.pinterest.com/keks_is_html_academy/">
                   <svg class="main-footer__social-icon-svg" width="30" height="30" aria-hidden="true" fill="#f8fdff">
                     <use xlink:href="img/sprite.svg#pinterest"></use>
@@ -129,7 +132,6 @@
               <a class="main-footer__site-sections-item" href="tel:+79253647813">+7 (925) 364-78-13</a>
             </div>
           </section>
-
         </div>
       </div>
     </footer>

@@ -1,12 +1,13 @@
 .main-footer {
   background-color: $second-background-color;
   color: $second-color;
+  padding: 50px 0 55px;
 }
 
 .main-footer__grid-wrapper {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  align-items: center;
+  align-items: start;
   justify-items: start;
   gap: 30px;
 
@@ -22,4 +23,82 @@
   @include vp-767 {
     align-items: end;
   }
+}
+
+.main-footer__logo-and-social-links {
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer__main-logo-link {
+  line-height: 0;
+}
+
+.main-footer__main-logo {
+  width: 215px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.main-footer__social-links-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 30px;
+  padding-left: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.main-footer__social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-footer__section {
+  padding-top: 5px;
+}
+
+.main-footer__site-sections {
+  grid-column: 4/8;
+}
+
+.main-footer__section-header {
+  margin: 0;
+  font-family: $roboto-condensed;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main-footer__site-sections-parts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 10px;
+}
+
+.main-footer__site-sections-part {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.main-footer__site-sections-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-footer__our-office {
+  grid-column: 8/11;
 }
