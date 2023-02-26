@@ -1,0 +1,25 @@
+.main-footer {
+  background-color: $second-background-color;
+  color: $second-color;
+}
+
+.main-footer__grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  align-items: center;
+  justify-items: start;
+  gap: 30px;
+
+  @include vp-1023 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    row-gap: 20px;
+    justify-content: end;
+    align-items: start;
+  }
+
+  @include vp-767 {
+    align-items: end;
+  }
+}
