@@ -9,8 +9,15 @@
   top: 0;
 
   @include vp-1023 {
+    background-image: linear-gradient(0deg, rgba(4, 24, 39, 0) 0, $second-background-color  15px);
     padding-top: 20px;
     padding-bottom: 25px;
+  }
+
+  @include vp-767 {
+    background-image: linear-gradient(0deg, rgba(4, 24, 39, 0) 0, $second-background-color  11px);
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 }
 
@@ -29,6 +36,10 @@
     justify-content: end;
     align-items: start;
   }
+
+  @include vp-767 {
+    align-items: end;
+  }
 }
 
 .main-header__main-logo-link {
@@ -41,6 +52,14 @@
 }
 
 .main-header__main-logo {
+  width: 215px;
+  height: 55px;
+  object-fit: contain;
+
+  @include vp-767 {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .main-header__link {
@@ -53,6 +72,11 @@
   @include vp-1023 {
     padding: 10px;
     margin-right: 20px;
+  }
+
+  @include vp-767 {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 

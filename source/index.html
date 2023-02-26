@@ -1,102 +1,196 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="main-header">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <title>smart device</title>
+
+  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/rouble.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+  <link rel="preload" href="fonts/PTMono-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/rouble.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="main-header">
+      <div class="container">
+        <div class="main-header__grid-wrapper">
+          <a class="main-header__main-logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/main-logo/main-logo.webp 1x, ./img/main-logo/main-logo@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="./img/main-logo/main-logo.png 1x, ./img/main-logo/main-logo@2x.png 2x">
+
+              <source media="(max-width: 767px)" srcset="./img/main-logo/mobile-logo.webp 1x, ./img/main-logo/mobile-logo@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="./img/main-logo/mobile-logo.png 1x, ./img/main-logo/mobile-logo@2x.png 2x">
+
+              <img class="main-header__main-logo" width="215" height="55" src="./img/main-logo/main-logo.png" alt="Ссылка на главную страницу.">
+            </picture>
+          </a>
+          <a class="main-header__link main-header__email" href="mailto:info@sd.ru">
+            <svg class="" width="20" height="20" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#email"></use>
+            </svg>
+            <span class="visually-hidden">Написать на почту</span>
+            <span class="main-header__link-text" lang="en">info@sd.ru</span>
+          </a>
+          <a class="main-header__link main-header__phone" href="tel:+74950005252">
+            <svg class="" width="20" height="20" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#phone-call"></use>
+            </svg>
+            <span class="visually-hidden">Позвонить по телефону:</span>
+            <span class="main-header__link-text">+7 (495) 000 52 52</span>
+          </a>
+          <button class="main-header__button" type="button">Заказать звонок</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint necessitatibus repudiandae vero amet. Quae
+        impedit saepe, ex illo harum facere cum quo deleniti odio minima officiis qui ad explicabo magni ducimus quasi
+        sequi id sapiente sed beatae tempora repudiandae! Molestiae, nisi! Nulla fugit perspiciatis, fuga exercitationem
+        quia quibusdam, obcaecati, adipisci sed ab omnis quo. Cumque, inventore! Minima libero sunt dolorem neque
+        tempora voluptatem delectus dolores debitis et beatae. Molestias expedita consequatur, debitis temporibus
+        voluptate nisi suscipit ut id. Cumque, iusto aliquam provident repudiandae sunt omnis in quibusdam! Distinctio
+        velit iusto ex delectus eveniet quibusdam consequuntur illum recusandae molestias voluptatem laboriosam quia quo
+        veritatis reiciendis, vitae tempore in perspiciatis doloremque a nulla! Reprehenderit quae beatae deserunt rem
+        quasi architecto dignissimos obcaecati non officia facilis! Non ad, temporibus dolor totam vel voluptatem ut
+        odit saepe doloremque? In sed eius sapiente. Consectetur sapiente voluptate, reiciendis vel recusandae aut
+        expedita fuga earum perferendis, delectus temporibus ducimus distinctio minus incidunt esse molestias veritatis
+        corporis rem quis maxime natus necessitatibus illo. Aperiam aut labore obcaecati fugit quisquam quo cumque
+        facilis! Consectetur quam culpa obcaecati quisquam? Dolores ipsam officia consequatur rem nostrum, ipsa itaque
+        fugiat et iste nesciunt. Eos, dicta recusandae non consequatur error quidem minima soluta ipsum distinctio saepe
+        voluptate eum nulla blanditiis impedit totam praesentium dignissimos explicabo! Dignissimos nostrum aliquam sit
+        dolorum, dolores eum deleniti ad, aspernatur nam accusantium fuga qui aperiam sunt numquam vitae. Delectus at
+        voluptatum sapiente numquam. Sunt reprehenderit voluptatem incidunt ea veniam, harum architecto ratione placeat
+        voluptas consequatur vel eius nihil eaque? Quas, sunt explicabo! Quos tempora a deserunt dolore eaque fugiat
+        cupiditate quo itaque neque, doloremque voluptatum ab fugit, laboriosam quidem quas aut similique recusandae
+        magni atque! Consequatur quos corrupti architecto incidunt temporibus molestias quaerat fuga repudiandae animi,
+        obcaecati quas ipsam ab accusantium placeat reprehenderit. At, reiciendis corrupti sapiente quo molestiae unde
+        ipsum asperiores sed dicta accusantium aliquid, enim ea beatae. Iusto sit illum, accusamus, accusantium possimus
+        nesciunt nihil modi laudantium odit porro quae cupiditate. Quidem cumque alias voluptatem, fugiat reiciendis
+        rem, ipsum doloremque ab sunt quod accusamus qui. Ipsa nisi asperiores architecto corrupti cum ullam
+        voluptatibus ipsum quidem dolorem molestiae, accusamus, temporibus placeat eligendi ut ipsam! Deleniti, adipisci
+        facere placeat fuga praesentium eos unde sint reiciendis perspiciatis nostrum officia eaque nihil, repellat
+        recusandae. Quasi tempore quas nesciunt animi odit eligendi. Aperiam, ad tempore, necessitatibus veritatis
+        possimus aliquid aliquam, ratione optio vel quia voluptatem non exercitationem iure porro repellendus sequi
+        deleniti vero perspiciatis minima. Facere inventore doloremque perspiciatis accusamus debitis, qui amet
+        distinctio incidunt laudantium dolorum eius accusantium delectus ipsam, ea voluptas nobis. Consectetur porro
+        officia vitae earum veniam sit sed nesciunt illo nemo provident, nihil necessitatibus hic at vel accusantium
+        nisi odio tempora optio. Voluptatum optio, cumque, reprehenderit quo sequi dolores architecto repellat beatae
+        similique consequuntur tempore! In iure neque voluptates. Nostrum suscipit ex numquam repellendus iure quam et,
+        reiciendis praesentium, consequuntur voluptatem vitae deserunt modi error delectus fugit accusamus molestiae
+        molestias, ipsa alias distinctio maxime voluptates? Sapiente voluptatem provident officiis maiores nulla
+        exercitationem doloribus facilis quibusdam, fugit veniam hic, sed nemo, iure voluptas voluptatum esse accusamus
+        ea praesentium quis! Consequatur omnis exercitationem, beatae assumenda cumque doloribus tenetur. Nemo fuga
+        alias, cupiditate esse consequatur eos adipisci. Rerum, sunt quasi molestiae, natus iste nobis accusamus
+        pariatur ducimus voluptate, dolorum vitae tempora eligendi eveniet laboriosam saepe excepturi qui eius
+        reprehenderit deleniti quidem quam quae! Repudiandae eveniet omnis nobis autem tempora vel praesentium laborum
+        porro in possimus veritatis commodi, sint iste dicta fuga eum eaque accusantium magni ipsum! Consectetur vel
+        aspernatur possimus inventore adipisci impedit doloremque, debitis, maiores perspiciatis dolore nisi ducimus.
+        Voluptatibus, voluptate ullam pariatur beatae voluptatum sit inventore similique autem laborum nemo unde omnis,
+        praesentium cum quae doloribus accusantium excepturi vitae iusto! Perferendis in veritatis, amet dolorum sint
+        aliquid nesciunt doloribus harum atque adipisci quod fuga sequi est modi quaerat? Assumenda expedita nulla
+        voluptatem animi reiciendis perferendis molestiae ducimus quas quaerat ad? Voluptatibus cum laboriosam
+        accusantium, et labore amet. Incidunt necessitatibus iste, nam fugit deserunt quis blanditiis ipsa! Nobis ad
+        molestias sed consequuntur aut ratione optio alias molestiae nisi, est unde nesciunt ea quos dolore laudantium
+        fugit mollitia harum culpa modi at non esse? Similique sunt totam voluptates obcaecati accusantium. In,
+        laboriosam praesentium! Recusandae sequi eos error in illum dolorem dolores. Iste vero at nostrum rem in, modi
+        rerum beatae odio vel animi officia dolorum non unde consequatur asperiores ipsam quae necessitatibus iusto
+        cupiditate, ut doloribus aspernatur quas. Dolorum nobis nostrum reiciendis, adipisci dolor laborum harum sunt
+        atque, dolore, blanditiis quis voluptas quas mollitia. Unde quibusdam deleniti quasi voluptates, eveniet
+        praesentium voluptas dignissimos dolorem id consequatur quos saepe expedita quod totam animi soluta aspernatur
+        blanditiis quis obcaecati reiciendis labore! Voluptate, atque. Dolore quibusdam rerum accusamus, commodi modi
+        libero nulla ut? Nihil velit magnam quibusdam sequi quod tempora sit pariatur! Iste unde in minima mollitia
+        sapiente? Excepturi quos nobis quasi assumenda, officiis culpa esse dolor delectus neque nam in provident
+        quaerat. Architecto hic aperiam, nihil enim aliquid accusamus deserunt, cum numquam similique, quasi
+        consequuntur ducimus laboriosam voluptate! Dicta expedita autem labore dolor saepe itaque quos, est consequuntur
+        alias blanditiis adipisci nobis tempore eaque suscipit culpa quasi ex, numquam porro harum enim unde ut debitis.
+        Officia nihil est repellat totam error possimus nemo non deserunt eius minus doloremque commodi ad placeat,
+        libero autem et excepturi molestiae ab culpa distinctio? Ab aperiam, quibusdam molestias sequi, excepturi
+        voluptas laborum odit quasi dolor tempore fugit. Error ex, voluptatum illo, porro molestias cumque quo quis
+        fugit eaque a maiores voluptatibus dolores accusantium nostrum deserunt veniam tempora eos iure eum, facilis
+        harum veritatis! Totam, modi perspiciatis veniam sint, ad similique odit quae earum molestiae optio ex dicta.
+        Voluptas consequatur facere suscipit nobis unde eos incidunt magnam accusantium veritatis temporibus eligendi
+        voluptate voluptates itaque, labore pariatur in recusandae tenetur nostrum. Praesentium, ipsam? Earum culpa
+        aperiam id officia ut minus, error commodi sed hic nihil numquam maxime exercitationem architecto dolore cumque
+        tempore debitis! Eos numquam possimus, maiores minima veritatis non nisi, dolorem debitis quibusdam suscipit
+        quos. Quam doloribus dolor explicabo harum inventore eos odit et, similique soluta, quae pariatur temporibus?
+        Atque ex ea praesentium quas dolor? Temporibus, enim deserunt blanditiis repellendus voluptas impedit qui aut
+        magnam illum eveniet ipsam! Blanditiis nobis quas ex ut quo vitae id! Unde, ratione beatae eos debitis corporis
+        voluptatibus aspernatur quia optio dicta facilis tempore expedita, aliquid placeat accusantium modi alias
+        quibusdam adipisci asperiores magnam, voluptate praesentium maxime! Eos, molestiae. Praesentium tenetur atque
+        accusantium dignissimos repudiandae beatae sint eaque nobis, cum dolore omnis dicta maiores enim aut numquam,
+        voluptatibus tempora eligendi aliquid aperiam. Suscipit incidunt provident est fuga quisquam? Quis iste magni
+        quisquam hic expedita, labore dolore ullam eaque reprehenderit maxime aperiam, nam nemo maiores, ex porro
+        provident aspernatur corporis eligendi rerum voluptas iure odit. Voluptate natus obcaecati error. Officia vitae
+        mollitia, quas ducimus minus illo quam eum maiores ad, tenetur odio et in, quisquam dolorem saepe possimus
+        necessitatibus amet. Reiciendis autem vel culpa, minus aliquid unde nobis ut consequatur, commodi perferendis
+        perspiciatis nisi est necessitatibus, pariatur nulla sed quasi alias ducimus odio odit beatae maxime. Magnam
+        beatae quae ipsa, accusantium doloremque laudantium ut alias commodi, deleniti distinctio ea, iste sunt nisi
+        veritatis cum. Iure numquam minima nemo. Nesciunt nam saepe sapiente eaque facilis cum minus commodi aliquid
+        magni similique delectus vero, cumque quod sit iure eligendi. Itaque debitis nihil, a officia saepe laborum quas
+        tempora explicabo doloribus. Libero, eligendi adipisci neque ab perferendis molestiae consequuntur quam cumque.
+        Commodi, voluptate consequuntur maxime minus molestiae earum aliquam porro beatae?
+      </div>
+
+      <section class="intro">
         <div class="container">
-          <div class="main-header__grid-wrapper">
-            <a class="main-header__main-logo-link" href="index.html">
-              <span class="visually-hidden">Ссылка на главную страницу.</span>
-              <svg class="main-header__main-logo" width="215" height="55" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#main-logo"></use>
-              </svg>
-            </a>
-            <a class="main-header__link main-header__email" href="mailto:info@sd.ru">
-              <svg class="" width="20" height="20" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#email"></use>
-              </svg>
-              <span class="visually-hidden">Написать на почту</span>
-              <span class="main-header__link-text" lang="en">info@sd.ru</span>
-            </a>
-            <a class="main-header__link main-header__phone" href="tel:+74950005252">
-              <svg class="" width="20" height="20" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#phone-call"></use>
-              </svg>
-              <span class="visually-hidden">Позвонить по телефону:</span>
-              <span  class="main-header__link-text">+7 (495) 000 52 52</span>
-            </a>
-            <button class="main-header__button" type="button">Заказать звонок</button>
-          </div>
+          <h1>Тестовая страница.</h1>
+          <p>На данной странице показан пример модальных окон.</p>
+          <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.
+          </p>
+          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
         </div>
-      </header>
-      <main style="background-color: aqua;
+      </section>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </div>
 
-
-margin-top: -120px;
-padding-top: 120px;
-">
-        <div ></div>
-        <div class="visually-hidden">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ullam eaque temporibus eligendi. Aliquam numquam fugiat placeat? Excepturi quia quam possimus dolorum dolor maiores rem! Temporibus impedit assumenda placeat possimus, suscipit nisi! Quos, explicabo! Explicabo architecto sunt, esse temporibus expedita doloribus voluptatum ipsa reprehenderit praesentium alias quis rem tempora ratione quos soluta dolores suscipit, fugit deleniti modi! Voluptate illum mollitia magnam hic? Harum nesciunt commodi nostrum ut debitis doloremque? Quae optio, illo nulla rerum eaque earum voluptatem reiciendis blanditiis debitis distinctio adipisci autem, libero inventore ex dolorem consequatur corrupti ut accusamus sint cupiditate reprehenderit. Reprehenderit assumenda repellendus dicta velit porro accusantium, nihil cum animi qui repudiandae maiores numquam, delectus dolor quasi id deserunt consectetur adipisci recusandae! Reprehenderit, consequatur voluptates quos voluptate rerum iure?
-        </div>
-
-        <div>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint necessitatibus repudiandae vero amet. Quae impedit saepe, ex illo harum facere cum quo deleniti odio minima officiis qui ad explicabo magni ducimus quasi sequi id sapiente sed beatae tempora repudiandae! Molestiae, nisi! Nulla fugit perspiciatis, fuga exercitationem quia quibusdam, obcaecati, adipisci sed ab omnis quo. Cumque, inventore! Minima libero sunt dolorem neque tempora voluptatem delectus dolores debitis et beatae. Molestias expedita consequatur, debitis temporibus voluptate nisi suscipit ut id. Cumque, iusto aliquam provident repudiandae sunt omnis in quibusdam! Distinctio velit iusto ex delectus eveniet quibusdam consequuntur illum recusandae molestias voluptatem laboriosam quia quo veritatis reiciendis, vitae tempore in perspiciatis doloremque a nulla! Reprehenderit quae beatae deserunt rem quasi architecto dignissimos obcaecati non officia facilis! Non ad, temporibus dolor totam vel voluptatem ut odit saepe doloremque? In sed eius sapiente. Consectetur sapiente voluptate, reiciendis vel recusandae aut expedita fuga earum perferendis, delectus temporibus ducimus distinctio minus incidunt esse molestias veritatis corporis rem quis maxime natus necessitatibus illo. Aperiam aut labore obcaecati fugit quisquam quo cumque facilis! Consectetur quam culpa obcaecati quisquam? Dolores ipsam officia consequatur rem nostrum, ipsa itaque fugiat et iste nesciunt. Eos, dicta recusandae non consequatur error quidem minima soluta ipsum distinctio saepe voluptate eum nulla blanditiis impedit totam praesentium dignissimos explicabo! Dignissimos nostrum aliquam sit dolorum, dolores eum deleniti ad, aspernatur nam accusantium fuga qui aperiam sunt numquam vitae. Delectus at voluptatum sapiente numquam. Sunt reprehenderit voluptatem incidunt ea veniam, harum architecto ratione placeat voluptas consequatur vel eius nihil eaque? Quas, sunt explicabo! Quos tempora a deserunt dolore eaque fugiat cupiditate quo itaque neque, doloremque voluptatum ab fugit, laboriosam quidem quas aut similique recusandae magni atque! Consequatur quos corrupti architecto incidunt temporibus molestias quaerat fuga repudiandae animi, obcaecati quas ipsam ab accusantium placeat reprehenderit. At, reiciendis corrupti sapiente quo molestiae unde ipsum asperiores sed dicta accusantium aliquid, enim ea beatae. Iusto sit illum, accusamus, accusantium possimus nesciunt nihil modi laudantium odit porro quae cupiditate. Quidem cumque alias voluptatem, fugiat reiciendis rem, ipsum doloremque ab sunt quod accusamus qui. Ipsa nisi asperiores architecto corrupti cum ullam voluptatibus ipsum quidem dolorem molestiae, accusamus, temporibus placeat eligendi ut ipsam! Deleniti, adipisci facere placeat fuga praesentium eos unde sint reiciendis perspiciatis nostrum officia eaque nihil, repellat recusandae. Quasi tempore quas nesciunt animi odit eligendi. Aperiam, ad tempore, necessitatibus veritatis possimus aliquid aliquam, ratione optio vel quia voluptatem non exercitationem iure porro repellendus sequi deleniti vero perspiciatis minima. Facere inventore doloremque perspiciatis accusamus debitis, qui amet distinctio incidunt laudantium dolorum eius accusantium delectus ipsam, ea voluptas nobis. Consectetur porro officia vitae earum veniam sit sed nesciunt illo nemo provident, nihil necessitatibus hic at vel accusantium nisi odio tempora optio. Voluptatum optio, cumque, reprehenderit quo sequi dolores architecto repellat beatae similique consequuntur tempore! In iure neque voluptates. Nostrum suscipit ex numquam repellendus iure quam et, reiciendis praesentium, consequuntur voluptatem vitae deserunt modi error delectus fugit accusamus molestiae molestias, ipsa alias distinctio maxime voluptates? Sapiente voluptatem provident officiis maiores nulla exercitationem doloribus facilis quibusdam, fugit veniam hic, sed nemo, iure voluptas voluptatum esse accusamus ea praesentium quis! Consequatur omnis exercitationem, beatae assumenda cumque doloribus tenetur. Nemo fuga alias, cupiditate esse consequatur eos adipisci. Rerum, sunt quasi molestiae, natus iste nobis accusamus pariatur ducimus voluptate, dolorum vitae tempora eligendi eveniet laboriosam saepe excepturi qui eius reprehenderit deleniti quidem quam quae! Repudiandae eveniet omnis nobis autem tempora vel praesentium laborum porro in possimus veritatis commodi, sint iste dicta fuga eum eaque accusantium magni ipsum! Consectetur vel aspernatur possimus inventore adipisci impedit doloremque, debitis, maiores perspiciatis dolore nisi ducimus. Voluptatibus, voluptate ullam pariatur beatae voluptatum sit inventore similique autem laborum nemo unde omnis, praesentium cum quae doloribus accusantium excepturi vitae iusto! Perferendis in veritatis, amet dolorum sint aliquid nesciunt doloribus harum atque adipisci quod fuga sequi est modi quaerat? Assumenda expedita nulla voluptatem animi reiciendis perferendis molestiae ducimus quas quaerat ad? Voluptatibus cum laboriosam accusantium, et labore amet. Incidunt necessitatibus iste, nam fugit deserunt quis blanditiis ipsa! Nobis ad molestias sed consequuntur aut ratione optio alias molestiae nisi, est unde nesciunt ea quos dolore laudantium fugit mollitia harum culpa modi at non esse? Similique sunt totam voluptates obcaecati accusantium. In, laboriosam praesentium! Recusandae sequi eos error in illum dolorem dolores. Iste vero at nostrum rem in, modi rerum beatae odio vel animi officia dolorum non unde consequatur asperiores ipsam quae necessitatibus iusto cupiditate, ut doloribus aspernatur quas. Dolorum nobis nostrum reiciendis, adipisci dolor laborum harum sunt atque, dolore, blanditiis quis voluptas quas mollitia. Unde quibusdam deleniti quasi voluptates, eveniet praesentium voluptas dignissimos dolorem id consequatur quos saepe expedita quod totam animi soluta aspernatur blanditiis quis obcaecati reiciendis labore! Voluptate, atque. Dolore quibusdam rerum accusamus, commodi modi libero nulla ut? Nihil velit magnam quibusdam sequi quod tempora sit pariatur! Iste unde in minima mollitia sapiente? Excepturi quos nobis quasi assumenda, officiis culpa esse dolor delectus neque nam in provident quaerat. Architecto hic aperiam, nihil enim aliquid accusamus deserunt, cum numquam similique, quasi consequuntur ducimus laboriosam voluptate! Dicta expedita autem labore dolor saepe itaque quos, est consequuntur alias blanditiis adipisci nobis tempore eaque suscipit culpa quasi ex, numquam porro harum enim unde ut debitis. Officia nihil est repellat totam error possimus nemo non deserunt eius minus doloremque commodi ad placeat, libero autem et excepturi molestiae ab culpa distinctio? Ab aperiam, quibusdam molestias sequi, excepturi voluptas laborum odit quasi dolor tempore fugit. Error ex, voluptatum illo, porro molestias cumque quo quis fugit eaque a maiores voluptatibus dolores accusantium nostrum deserunt veniam tempora eos iure eum, facilis harum veritatis! Totam, modi perspiciatis veniam sint, ad similique odit quae earum molestiae optio ex dicta. Voluptas consequatur facere suscipit nobis unde eos incidunt magnam accusantium veritatis temporibus eligendi voluptate voluptates itaque, labore pariatur in recusandae tenetur nostrum. Praesentium, ipsam? Earum culpa aperiam id officia ut minus, error commodi sed hic nihil numquam maxime exercitationem architecto dolore cumque tempore debitis! Eos numquam possimus, maiores minima veritatis non nisi, dolorem debitis quibusdam suscipit quos. Quam doloribus dolor explicabo harum inventore eos odit et, similique soluta, quae pariatur temporibus? Atque ex ea praesentium quas dolor? Temporibus, enim deserunt blanditiis repellendus voluptas impedit qui aut magnam illum eveniet ipsam! Blanditiis nobis quas ex ut quo vitae id! Unde, ratione beatae eos debitis corporis voluptatibus aspernatur quia optio dicta facilis tempore expedita, aliquid placeat accusantium modi alias quibusdam adipisci asperiores magnam, voluptate praesentium maxime! Eos, molestiae. Praesentium tenetur atque accusantium dignissimos repudiandae beatae sint eaque nobis, cum dolore omnis dicta maiores enim aut numquam, voluptatibus tempora eligendi aliquid aperiam. Suscipit incidunt provident est fuga quisquam? Quis iste magni quisquam hic expedita, labore dolore ullam eaque reprehenderit maxime aperiam, nam nemo maiores, ex porro provident aspernatur corporis eligendi rerum voluptas iure odit. Voluptate natus obcaecati error. Officia vitae mollitia, quas ducimus minus illo quam eum maiores ad, tenetur odio et in, quisquam dolorem saepe possimus necessitatibus amet. Reiciendis autem vel culpa, minus aliquid unde nobis ut consequatur, commodi perferendis perspiciatis nisi est necessitatibus, pariatur nulla sed quasi alias ducimus odio odit beatae maxime. Magnam beatae quae ipsa, accusantium doloremque laudantium ut alias commodi, deleniti distinctio ea, iste sunt nisi veritatis cum. Iure numquam minima nemo. Nesciunt nam saepe sapiente eaque facilis cum minus commodi aliquid magni similique delectus vero, cumque quod sit iure eligendi. Itaque debitis nihil, a officia saepe laborum quas tempora explicabo doloribus. Libero, eligendi adipisci neque ab perferendis molestiae consequuntur quam cumque. Commodi, voluptate consequuntur maxime minus molestiae earum aliquam porro beatae?
-        </div>
-
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
 </html>
