@@ -7,6 +7,11 @@
 
   position: sticky;
   top: 0;
+
+  @include vp-1023 {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
 }
 
 .main-header__grid-wrapper {
@@ -15,23 +20,40 @@
   align-items: center;
   justify-items: start;
   gap: 30px;
+
+  @include vp-1023 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    row-gap: 20px;
+    justify-content: end;
+    align-items: start;
+  }
 }
 
 .main-header__main-logo-link {
   line-height: 0;
   grid-column: 1/4;
+
+  @include vp-1023 {
+    margin-right: auto;
+  }
 }
 
 .main-header__main-logo {
 }
 
-.main-header__email,
-.main-header__phone {
+.main-header__link {
   display: flex;
   align-items: center;
   column-gap: 15px;
   padding: 0 2px 6px;
   color: $second-color;
+
+  @include vp-1023 {
+    padding: 10px;
+    margin-right: 20px;
+  }
 }
 
 .main-header__email {
@@ -60,4 +82,14 @@
   text-transform: uppercase;
   color: $second-color;
   cursor: pointer;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.main-header__link-text {
+  @include vp-1023 {
+    @include visually-hidden;
+  }
 }
