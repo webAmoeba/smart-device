@@ -1792,6 +1792,11 @@ button,
     transform: translate(0, -50%) rotate(90deg);
   }
 
+  .main-footer__section-header--open::before {
+    width: 0;
+    height: 0;
+  }
+
   .main-footer__site-sections-parts {
     row-gap: 10px;
   }
