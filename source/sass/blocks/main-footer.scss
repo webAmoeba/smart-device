@@ -12,16 +12,13 @@
   gap: 30px;
 
   @include vp-1023 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0;
-    row-gap: 20px;
-    justify-content: end;
-    align-items: start;
+    justify-items: unset;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 38px;
   }
 
   @include vp-767 {
-    align-items: end;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -29,6 +26,13 @@
   grid-column: 1/4;
   display: flex;
   flex-direction: column;
+
+  @include vp-1023 {
+    grid-column: 1/-1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-footer__main-logo-link {
@@ -49,6 +53,13 @@
   padding-left: 10px;
   display: flex;
   gap: 15px;
+
+  @include vp-1023 {
+    margin: 0;
+    padding: 0;
+    margin-right: -5px;
+    margin-top: -5px;
+  }
 }
 
 .main-footer__social-link {
@@ -61,10 +72,18 @@
 
 .main-footer__section {
   padding-top: 5px;
+
+  @include vp-1023 {
+    padding: 0;
+  }
 }
 
 .main-footer__site-sections {
   grid-column: 4/8;
+
+  @include vp-1023 {
+    grid-column: 1/3;
+  }
 }
 
 .main-footer__section-header {
@@ -76,6 +95,10 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+
+  @include vp-1023 {
+    margin-bottom: 22px;
+  }
 }
 
 .main-footer__site-sections-parts {
@@ -83,6 +106,11 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
   row-gap: 10px;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
 }
 
 .main-footer__site-sections-part {
@@ -90,6 +118,11 @@
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+
+  @include vp-1023 {
+    margin: 0;
+    row-gap: 8px;
+  }
 }
 
 .main-footer__site-sections-item {
@@ -101,4 +134,8 @@
 
 .main-footer__our-office {
   grid-column: 8/11;
+
+  @include vp-1023 {
+    grid-column: 3/5;
+  }
 }
