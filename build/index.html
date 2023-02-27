@@ -67,7 +67,7 @@
     <footer class="main-footer">
       <div class="container">
         <div class="main-footer__grid-wrapper">
-          <div class="main-footer__logo-and-social-links">
+          <div class="main-footer__container main-footer__logo-and-social-links">
             <a class="main-footer__main-logo-link" href="index.html">
               <picture>
                 <source media="(min-width: 320px)" srcset="./img/main-logo/main-logo.webp 1x, ./img/main-logo/main-logo@2x.webp 2x">
@@ -104,9 +104,10 @@
             </ul>
           </div>
 
-          <section class="main-footer__section main-footer__site-sections">
+          <section class="main-footer__container main-footer__section main-footer__site-sections">
+            <button class="main-footer__accordion-toggler" type="button" aria-hidden="true"></button>
             <h2 class="main-footer__section-header">Разделы сайта</h2>
-            <div class="main-footer__site-sections-parts">
+            <div class="main-footer__site-sections-parts main-footer__accordion main-footer__accordion--hidden">
               <div class="main-footer__site-sections-part">
                 <a class="main-footer__site-sections-item" href="#">О Компании</a>
                 <a class="main-footer__site-sections-item" href="#">Продукты</a>
@@ -121,15 +122,16 @@
             </div>
           </section>
 
-          <section class="main-footer__section main-footer__our-office">
+          <section class="main-footer__container main-footer__section main-footer__our-office">
+            <button class="main-footer__accordion-toggler" type="button" aria-hidden="true"></button>
             <h2 class="main-footer__section-header">Наш офис</h2>
-            <div class="main-footer__site-sections-part">
-              <a class="main-footer__site-sections-item" href="https://www.google.com/maps/place/%D0%9E%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80-%D1%82.,+10,+%D0%9C%D1%8B%D1%82%D0%B8%D1%89%D0%B8,+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+141006/data=!4m2!3m1!1s0x46b53195838bffff:0x8be3a5db7970d6ce?sa=X&ved=2ahUKEwjRkczv4rP9AhWa7aQKHay2AF0Q8gF6BAgSEAI">
+            <div class="main-footer__site-sections-part main-footer__accordion main-footer__accordion--hidden">
+              <a class="main-footer__site-sections-item main-footer__site-sections-item--address" href="https://www.google.com/maps/place/%D0%9E%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80-%D1%82.,+10,+%D0%9C%D1%8B%D1%82%D0%B8%D1%89%D0%B8,+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+141006/data=!4m2!3m1!1s0x46b53195838bffff:0x8be3a5db7970d6ce?sa=X&ved=2ahUKEwjRkczv4rP9AhWa7aQKHay2AF0Q8gF6BAgSEAI">
                 г. Мытищи, Олимпийский проспект, д.10
               </a>
-              <a class="main-footer__site-sections-item" href="tel:+74955894050">+7 (495) 589-40-50</a>
-              <a class="main-footer__site-sections-item" href="tel:+79253895829">+7 (925) 389-58-29</a>
-              <a class="main-footer__site-sections-item" href="tel:+79253647813">+7 (925) 364-78-13</a>
+              <a class="main-footer__site-sections-item main-footer__site-sections-item--phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
+              <a class="main-footer__site-sections-item main-footer__site-sections-item--phone" href="tel:+79253895829">+7 (925) 389-58-29</a>
+              <a class="main-footer__site-sections-item main-footer__site-sections-item--phone" href="tel:+79253647813">+7 (925) 364-78-13</a>
             </div>
           </section>
         </div>

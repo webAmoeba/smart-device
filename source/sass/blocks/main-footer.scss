@@ -2,6 +2,21 @@
   background-color: $second-background-color;
   color: $second-color;
   padding: 50px 0 55px;
+
+  @include vp-767 {
+    padding: 35px 0;
+
+    .container {
+      padding: 0;
+    }
+  }
+}
+
+.main-footer__container {
+  @include vp-767 {
+    padding: 20px 25px;
+    border-bottom: 1px solid $border-color-footer;
+  }
 }
 
 .main-footer__grid-wrapper {
@@ -18,7 +33,7 @@
   }
 
   @include vp-767 {
-    grid-template-columns: repeat(4, 1fr);
+    display: block;
   }
 }
 
@@ -32,6 +47,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 25px;
+    padding-top: 0;
   }
 }
 
@@ -60,6 +82,10 @@
     margin-right: -5px;
     margin-top: -5px;
   }
+
+  @include vp-767 {
+    margin: 0;
+  }
 }
 
 .main-footer__social-link {
@@ -68,14 +94,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.main-footer__section {
-  padding-top: 5px;
-
-  @include vp-1023 {
-    padding: 0;
-  }
 }
 
 .main-footer__site-sections {
@@ -99,6 +117,34 @@
   @include vp-1023 {
     margin-bottom: 22px;
   }
+
+  @include vp-767 {
+    margin: 0;
+    line-height: 19px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 1px;
+      background-color: $plus-minus-button-color;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 1px;
+      background-color: $plus-minus-button-color;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%) rotate(90deg);
+    }
+  }
 }
 
 .main-footer__site-sections-parts {
@@ -110,6 +156,10 @@
   @include vp-1023 {
     grid-template-columns: 1fr;
     row-gap: 8px;
+  }
+
+  @include vp-767 {
+    row-gap: 10px;
   }
 }
 
@@ -123,6 +173,11 @@
     margin: 0;
     row-gap: 8px;
   }
+
+  @include vp-767 {
+    margin-top: -5px;
+    row-gap: 10px;
+  }
 }
 
 .main-footer__site-sections-item {
@@ -130,6 +185,19 @@
   font-size: 16px;
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
+
+
+  @include vp-767 {
+    font-size: 14px;
+
+    &--address {
+      margin-bottom: 10px;
+    }
+
+    &--phone {
+      line-height: 140%;
+    }
+  }
 }
 
 .main-footer__our-office {
@@ -137,5 +205,45 @@
 
   @include vp-1023 {
     grid-column: 3/5;
+  }
+}
+
+.main-footer__section {
+  padding-top: 5px;
+
+  @include vp-1023 {
+    padding: 0;
+  }
+
+  @include vp-767 {
+    position: relative;
+  }
+}
+
+.main-footer__accordion-toggler {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: rgba(202, 47, 47, 0.2);
+    // background-color: transparent;
+    z-index: 1;
+    border: none;
+  }
+}
+
+.main-footer__accordion {
+  @include vp-767 {
+    margin-top: 15px;
+
+    &--hidden {
+      @include visually-hidden;
+    }
   }
 }
