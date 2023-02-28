@@ -1,0 +1,40 @@
+.main-screen__grid {
+  display: flex;
+  flex-direction: column;
+  padding: 185px 176px 280px;
+  gap: 32px;
+}
+
+.main-screen__title {
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.main-screen__header {
+  margin: 0;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 155%;
+}
+
+.main-screen__consultation-button {
+  margin-top: 14px;
+  align-self: flex-start;
+  padding: 17px 27px;
+  background-color: $third-background-color;
+  border: none;
+  border-radius: 3px;
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
