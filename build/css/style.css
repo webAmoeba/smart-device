@@ -1469,6 +1469,7 @@ button,
   -ms-grid-column: 4;
   -ms-grid-column-span: 4;
   grid-column: 4/8;
+  width: 100%;
 }
 
 .main-footer__section-header {
@@ -1772,8 +1773,8 @@ button,
     width: 15px;
     height: 1px;
     background-color: #c4c4c4;
-    right: 0;
-    top: 50%;
+    right: 1px;
+    top: 30%;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -1785,8 +1786,8 @@ button,
     width: 15px;
     height: 1px;
     background-color: #c4c4c4;
-    right: 0;
-    top: 50%;
+    right: 1px;
+    top: 30%;
     -webkit-transform: translate(0, -50%) rotate(90deg);
     -ms-transform: translate(0, -50%) rotate(90deg);
     transform: translate(0, -50%) rotate(90deg);
@@ -1830,7 +1831,7 @@ button,
     height: 60px;
     top: 0;
     left: 0;
-    background-color: rgba(202, 47, 47, 0.2);
+    background-color: transparent;
     z-index: 1;
     border: none;
   }
