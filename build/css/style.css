@@ -1315,6 +1315,7 @@ button,
   padding-bottom: 35px;
   color: #f2f5f7;
   position: sticky;
+  z-index: 1;
   top: 0;
 }
 
@@ -1639,6 +1640,104 @@ button,
 .advantages__description {
   margin: 0;
   line-height: 135%;
+}
+
+.about-company {
+  min-height: 540px;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.about-company__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-left: 300px;
+  position: relative;
+}
+
+.about-company__year {
+  position: absolute;
+  left: 68px;
+  top: 4px;
+  margin-left: -36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #00b2ff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 156px;
+  line-height: 220px;
+}
+
+.about-company__header {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about-company__description {
+  margin: 0;
+  margin-bottom: 14px;
+  line-height: 22px;
+}
+
+.about-company__button {
+  margin-top: 14px;
+  -ms-grid-column-align: end;
+  justify-self: end;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 180px;
+  min-height: 45px;
+  padding: 3px;
+  color: #00b2ff;
+  background-color: inherit;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid #00b2ff;
+  border-radius: 3px;
 }
 
 /* @mixin hover-focus {

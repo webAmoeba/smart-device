@@ -1,0 +1,72 @@
+.about-company {
+  min-height: 540px;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.about-company__grid {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-left: 300px;
+  position: relative;
+}
+
+.about-company__year {
+  position: absolute;
+  left: 68px;
+  top: 4px;
+  margin-left: -36px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: $third-color;
+  background-clip: text;
+  color: transparent;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 156px;
+  line-height: 220px;
+}
+
+.about-company__header {
+  margin: 0;
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about-company__description {
+  margin: 0;
+  margin-bottom: 14px;
+  line-height: 22px;
+}
+
+.about-company__button {
+  margin-top: 14px;
+  justify-self: end;
+  align-self: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  min-height: 45px;
+  padding: 3px;
+  color: $third-color;
+  background-color: inherit;
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid $third-color;
+  border-radius: 3px;
+}
