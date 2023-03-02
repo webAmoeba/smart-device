@@ -80,6 +80,10 @@
   margin-bottom: 14px;
   line-height: 22px;
 
+  &--hidden {
+    @include visually-hidden;
+  }
+
   @include vp-1023 {
     margin-bottom: 10px;
   }
@@ -87,7 +91,11 @@
   @include vp-767 {
     font-size: 14px;
     line-height: 134.4%;
+  }
+}
 
+.about-company__mobile-description {
+  @include vp-767 {
     &--hidden {
       @include visually-hidden;
     }
@@ -95,10 +103,10 @@
 }
 
 .about-company__button {
+  display: none;
   margin-top: 14px;
   justify-self: end;
   align-self: start;
-  display: flex;
   align-items: center;
   justify-content: center;
   min-width: 180px;
