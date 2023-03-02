@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {moveAccordion} from './modules/accordion';
-import {showMore} from './modules/more-detailed';
+import {showMore} from './modules/show-more';
 
 // ---------------------------------
 

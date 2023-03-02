@@ -6,7 +6,6 @@
   background-image:
     linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
     url("../img/backgrounds/main-background.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: $retina-dppx) {
@@ -18,13 +17,26 @@
   @include vp-1023 {
     margin-top: -100px;
     padding-top: 100px;
-    background-position: 0, -124px 0;
+    background-image:
+      linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+      url("../img/backgrounds/main-background-tablet.jpg");
+    background-position-x: 19%;
+    background-position-y: 50%;
+    background-size: 178% auto;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image:
+        linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+        url("../img/backgrounds/main-background-tablet@2x.jpg");
+    }
   }
 
   @include vp-767 {
     margin-top: -70px;
     padding-top: 70px;
-    background-position: 0, -230px 0;
+    background-position-x: 24%;
+    background-position-y: 50%;
+    background-size: 378% auto;
   }
 }
 

@@ -1,0 +1,177 @@
+.products-and-services {
+  padding: 66px 0 140px;
+  background-color: $second-background-color;
+  color: $second-color;
+
+  @include vp-1023 {
+    padding: 56px 0 75px;
+  }
+
+  @include vp-767 {
+    padding: 48px 0 80px;
+  }
+}
+
+.products-and-services__header {
+  margin: 0;
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 140.62%;
+
+    & span {
+      @include visually-hidden;
+    }
+
+    &::after {
+      content: "Товары и услуги \0a Smart Device";
+      white-space: pre;
+    }
+  }
+}
+
+.products-and-services__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 85px;
+
+  @include vp-1023 {
+    grid-template-columns: unset;
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    margin-top: 27px;
+  }
+}
+
+.products-and-services__item {
+  max-width: 350px;
+  width: 100%;
+  background-color: $color-neon-blue;
+  background-image:
+    linear-gradient(rgba(4, 24, 39, 0.5)),
+    url("../img/backgrounds/main-background.jpg");
+  background-position-x: 17%;
+  background-position-y: bottom;
+  background-size: auto 108%;
+
+
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+      linear-gradient(rgba(4, 24, 39, 0.5)),
+      url("../img/backgrounds/main-background@2x.jpg");
+  }
+
+  &--second {
+    background-position-x: 46%;
+
+    & br {
+      display: none;
+
+      @include vp-1023 {
+        display: block;
+      }
+    }
+  }
+
+  &--third {
+    background-position-x: 78%;
+  }
+
+  @include vp-1023 {
+    max-width: unset;
+    background-image:
+      linear-gradient(rgba(4, 24, 39, 0.5)),
+      url("../img/backgrounds/main-background-tablet.jpg");
+    background-position-x: 29%;
+    background-position-y: 97%;
+    background-size: unset;
+
+
+    @media (min-resolution: $retina-dppx) {
+      background-image:
+        linear-gradient(rgba(4, 24, 39, 0.5)),
+        url("../img/backgrounds/main-background-tablet@2x.jpg");
+    }
+
+    &--second {
+      background-position-x: 77%;
+      background-position-y: 56%;
+    }
+
+    &--third {
+      background-position-x: 18%;
+      background-position-y: 63%;
+    }
+  }
+
+  @include vp-767 {
+    background-position-x: 31%;
+    background-position-y: 53%;
+
+    &--second {
+      background-position-x: 30%;
+      background-position-y: 95%;
+    }
+
+    &--third {
+      background-position-x: 72%;
+      background-position-y: 69%;
+    }
+  }
+}
+
+.products-and-services__link {
+  position: relative;
+  display: block;
+  min-height: 650px;
+  padding: 50px 40px;
+  padding-right: 120px;
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: inherit;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    right: 0;
+    border-radius: 3px 0 0 0;
+    background: $third-color url("../img/svg/product-service.svg") no-repeat center;
+  }
+
+  @include vp-1023 {
+    min-height: 250px;
+    padding: 38px 45px;
+    padding-right: 400px;
+  }
+
+  @include vp-767 {
+    padding: 27px 30px;
+    font-size: 18px;
+    line-height: 30px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
