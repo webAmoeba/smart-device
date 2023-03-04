@@ -1,0 +1,151 @@
+$half: 50.7%;
+
+.form {
+  position: relative;
+  background-color: $third-color;
+  color: #ffffff;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $half;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, rgba(4, 24, 39, 0.5) 50%, transparent 50%);
+    z-index: -1;
+  }
+}
+
+.form__form {
+  padding-left: $half;
+  padding-top: 165px;
+  padding-bottom: 249px;
+  background: url("../img/backgrounds/airplane.png") no-repeat;
+  background-size: 510px 285px;
+  background-position: 0 246px;
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("../img/backgrounds/airplane@2x.png") no-repeat;
+  }
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0 10px;
+}
+
+.form__legend {
+  margin: 0;
+  margin-left: -6px;
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.form__description {
+  line-height: 22px;
+  margin: 0;
+  margin-top: 13px;
+}
+
+.form__inputs-grid {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.form__input-text,
+.form__textarea {
+  padding: 14px;
+  font-family: $pt-mono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $main-color;
+  background-color: rgba(4, 20, 39, 0.15);
+  border: none;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: $second-color;
+  }
+}
+
+.form__input-text {
+
+}
+
+.form__textarea {
+  grid-column: 1/-1;
+  padding: 22px 14px;
+}
+
+.form__buttons-wrap {
+  margin-top: 35px;
+  display: grid;
+  align-items: end;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.form__button {
+  padding: 14px;
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  background-color: $main-color;
+}
+
+.form__agree-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.form__agree-checkbox {
+  position: absolute;
+  appearance: none;
+
+  &:focus-visible {
+    outline: 0;
+  }
+}
+
+.form__custom-checkbox {
+  position: relative;
+  flex-shrink: 0;
+  margin-right: 11px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+
+////// checked
+.form__agree-checkbox:checked ~ .form__custom-checkbox::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 0;
+  left: 0;
+  background: transparent url("../img/svg/bird-for-checkbox.svg") no-repeat center;
+}

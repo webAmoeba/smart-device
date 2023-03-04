@@ -1,3 +1,40 @@
+.main-screen {
+  padding-top: 120px;
+  color: $second-color;
+  background-color: $second-background-color;
+  background-image:
+    linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+    url("../img/backgrounds/main-background.jpg");
+  background-size: cover;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+      linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+      url("../img/backgrounds/main-background@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image:
+      linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+      url("../img/backgrounds/main-background-tablet.jpg");
+    background-position-x: 19%;
+    background-position-y: 50%;
+    background-size: 178% auto;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image:
+        linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+        url("../img/backgrounds/main-background-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-position-x: 24%;
+    background-position-y: 50%;
+    background-size: 378% auto;
+  }
+}
+
 .main-screen__grid {
   display: flex;
   flex-direction: column;

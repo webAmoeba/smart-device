@@ -1314,7 +1314,8 @@ button,
   padding-top: 30px;
   padding-bottom: 35px;
   color: #f2f5f7;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   z-index: 1;
   top: 0;
 }
@@ -1393,21 +1394,6 @@ button,
   text-transform: uppercase;
   color: #f2f5f7;
   cursor: pointer;
-}
-
-.main__screen {
-  margin-top: -120px;
-  padding-top: 120px;
-  color: #f2f5f7;
-  background-color: #041827;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background.jpg");
-  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background.jpg");
-  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background.jpg");
-  background-size: cover;
-}
-
-.main__advantages {
-  margin-top: 120px;
 }
 
 .main-footer {
@@ -1540,6 +1526,16 @@ button,
   display: none;
 }
 
+.main-screen {
+  padding-top: 120px;
+  color: #f2f5f7;
+  background-color: #041827;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background.jpg");
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background.jpg");
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background.jpg");
+  background-size: cover;
+}
+
 .main-screen__grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1586,6 +1582,11 @@ button,
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 .advantages__list {
@@ -1642,8 +1643,8 @@ button,
 }
 
 .about-company {
-  min-height: 540px;
-  padding-top: 120px;
+  min-height: 480px;
+  padding-top: 60px;
   padding-bottom: 100px;
 }
 
@@ -1766,14 +1767,14 @@ button,
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 51px;
+  line-height: 50px;
 }
 
 .products-and-services__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-top: 50px;
+  margin-top: 54px;
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1808,7 +1809,7 @@ button,
   position: relative;
   display: block;
   min-height: 650px;
-  padding: 50px 40px;
+  padding: 47px 40px;
   padding-right: 120px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -1827,6 +1828,185 @@ button,
   right: 0;
   border-radius: 3px 0 0 0;
   background: #00b2ff url("../img/svg/product-service.svg") no-repeat center;
+  background-size: 8px 8px;
+}
+
+.form {
+  position: relative;
+  background-color: #00b2ff;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50.7%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, rgba(4, 24, 39, 0.5)), color-stop(50%, transparent));
+  background-image: -o-linear-gradient(left top, rgba(4, 24, 39, 0.5) 50%, transparent 50%);
+  background-image: linear-gradient(to right bottom, rgba(4, 24, 39, 0.5) 50%, transparent 50%);
+  z-index: -1;
+}
+
+.form__form {
+  padding-left: 50.7%;
+  padding-top: 165px;
+  padding-bottom: 249px;
+  background: url("../img/backgrounds/airplane.png") no-repeat;
+  background-size: 510px 285px;
+  background-position: 0 246px;
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0 10px;
+}
+
+.form__legend {
+  margin: 0;
+  margin-left: -6px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.form__description {
+  line-height: 22px;
+  margin: 0;
+  margin-top: 13px;
+}
+
+.form__inputs-grid {
+  margin-top: 34px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.form__input-text,
+.form__textarea {
+  padding: 14px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #041827;
+  background-color: rgba(4, 20, 39, 0.15);
+  border: none;
+  border-radius: 3px;
+}
+
+.form__input-text::-webkit-input-placeholder,
+.form__textarea::-webkit-input-placeholder {
+  color: #f2f5f7;
+}
+
+.form__input-text::-moz-placeholder,
+.form__textarea::-moz-placeholder {
+  color: #f2f5f7;
+}
+
+.form__input-text:-ms-input-placeholder,
+.form__textarea:-ms-input-placeholder {
+  color: #f2f5f7;
+}
+
+.form__input-text::-ms-input-placeholder,
+.form__textarea::-ms-input-placeholder {
+  color: #f2f5f7;
+}
+
+.form__input-text::placeholder,
+.form__textarea::placeholder {
+  color: #f2f5f7;
+}
+
+.form__textarea {
+  grid-column: 1/-1;
+  padding: 22px 14px;
+}
+
+.form__buttons-wrap {
+  margin-top: 35px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.form__button {
+  padding: 14px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  background-color: #041827;
+}
+
+.form__agree-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.form__agree-checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form__agree-checkbox:focus-visible {
+  outline: 0;
+}
+
+.form__custom-checkbox {
+  position: relative;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 11px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+.form__agree-checkbox:checked ~ .form__custom-checkbox::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 0;
+  left: 0;
+  background: transparent url("../img/svg/bird-for-checkbox.svg") no-repeat center;
 }
 
 /* @mixin hover-focus {
@@ -1921,21 +2101,6 @@ button,
     clip-path: inset(100%);
   }
 
-  .main__screen {
-    margin-top: -100px;
-    padding-top: 100px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background-tablet.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-tablet.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-tablet.jpg");
-    background-position-x: 19%;
-    background-position-y: 50%;
-    background-size: 178% auto;
-  }
-
-  .main__advantages {
-    margin-top: 80px;
-  }
-
   .main-footer__grid-wrapper {
     justify-items: unset;
     -ms-grid-columns: (1fr)[4];
@@ -1993,6 +2158,15 @@ button,
 
   .main-footer__section {
     padding: 0;
+  }
+
+  .main-screen {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background-tablet.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-tablet.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-tablet.jpg");
+    background-position-x: 19%;
+    background-position-y: 50%;
+    background-size: 178% auto;
   }
 
   .main-screen__grid {
@@ -2100,7 +2274,7 @@ button,
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .main__screen {
+  .main-screen {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background-tablet@2x.jpg");
     background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-tablet@2x.jpg");
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-tablet@2x.jpg");
@@ -2152,18 +2326,6 @@ button,
   .main-header__link {
     margin-right: 10px;
     margin-left: 10px;
-  }
-
-  .main__screen {
-    margin-top: -70px;
-    padding-top: 70px;
-    background-position-x: 24%;
-    background-position-y: 50%;
-    background-size: 378% auto;
-  }
-
-  .main__advantages {
-    margin-top: 50px;
   }
 
   .main-footer {
@@ -2287,6 +2449,12 @@ button,
     clip: rect(0 0 0 0);
     -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
+  }
+
+  .main-screen {
+    background-position-x: 24%;
+    background-position-y: 50%;
+    background-size: 378% auto;
   }
 
   .main-screen__grid {
@@ -2547,7 +2715,7 @@ button,
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
-  .main__screen {
+  .main-screen {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background@2x.jpg");
     background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background@2x.jpg");
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background@2x.jpg");
@@ -2561,5 +2729,9 @@ button,
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../img/backgrounds/main-background@2x.jpg");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background@2x.jpg");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background@2x.jpg");
+  }
+
+  .form__form {
+    background: url("../img/backgrounds/airplane@2x.png") no-repeat;
   }
 }

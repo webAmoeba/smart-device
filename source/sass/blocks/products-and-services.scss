@@ -18,7 +18,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 51px;
+  line-height: 50px;
 
   @include vp-767 {
     font-size: 28px;
@@ -39,7 +39,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-top: 50px;
+  margin-top: 54px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 85px;
@@ -138,7 +138,7 @@
   position: relative;
   display: block;
   min-height: 650px;
-  padding: 50px 40px;
+  padding: 47px 40px;
   padding-right: 120px;
   font-family: $roboto-condensed;
   font-style: normal;
@@ -156,6 +156,7 @@
     right: 0;
     border-radius: 3px 0 0 0;
     background: $third-color url("../img/svg/product-service.svg") no-repeat center;
+    background-size: 8px 8px;
   }
 
   @include vp-1023 {
