@@ -1861,8 +1861,9 @@ button,
 }
 
 .form__fieldset {
+  margin: 0;
   border: none;
-  padding: 0 10px;
+  padding: 0 12px;
 }
 
 .form__legend {
@@ -1935,10 +1936,11 @@ button,
 .form__textarea {
   grid-column: 1/-1;
   padding: 22px 14px;
+  min-height: 155px;
 }
 
 .form__buttons-wrap {
-  margin-top: 35px;
+  margin-top: 36px;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: end;
@@ -1950,7 +1952,7 @@ button,
 }
 
 .form__button {
-  padding: 14px;
+  padding: 13px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -2161,6 +2163,7 @@ button,
   }
 
   .main-screen {
+    padding-top: 100px;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/backgrounds/main-background-tablet.jpg");
     background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-tablet.jpg");
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/backgrounds/main-background-tablet.jpg");
@@ -2184,6 +2187,11 @@ button,
     margin-left: 45px;
   }
 
+  .advantages {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
   .advantages__item {
     min-height: 360px;
     gap: 10px;
@@ -2203,8 +2211,8 @@ button,
   }
 
   .about-company {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 34px;
+    padding-bottom: 78px;
   }
 
   .about-company__grid {
@@ -2238,7 +2246,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-top: 36px;
+    margin-top: 39px;
     gap: 30px;
   }
 
@@ -2270,6 +2278,50 @@ button,
     min-height: 250px;
     padding: 38px 45px;
     padding-right: 400px;
+  }
+
+  .form::after {
+    background-image: unset;
+  }
+
+  .form__form {
+    padding-left: unset;
+    background: unset;
+    padding-top: 47px;
+    padding-bottom: 125px;
+  }
+
+  .form__fieldset {
+    padding: 0;
+  }
+
+  .form__legend {
+    margin: 0;
+  }
+
+  .form__description {
+    margin-top: 6px;
+  }
+
+  .form__inputs-grid {
+    margin-top: 24px;
+  }
+
+  .form__textarea {
+    padding: 31px 14px;
+  }
+
+  .form__buttons-wrap {
+    gap: 85px;
+    margin-right: 55px;
+    margin-top: 35px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .form__agree-label {
+    margin-top: 5px;
   }
 }
 
