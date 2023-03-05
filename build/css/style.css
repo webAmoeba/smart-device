@@ -1316,7 +1316,7 @@ button,
   color: #f2f5f7;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   top: 0;
 }
 
@@ -1838,7 +1838,7 @@ button,
   z-index: 1;
 }
 
-.form::after {
+.form::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1851,13 +1851,30 @@ button,
   z-index: -1;
 }
 
+.form .container {
+  position: relative;
+}
+
+.form .container::before {
+  content: "";
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/backgrounds/airplane.png") no-repeat;
+  background-size: 85.9% auto;
+  background-position: 50px 246px;
+  z-index: -1;
+}
+
 .form__form {
-  padding-left: 50.7%;
+  max-width: 604px;
+  width: 50%;
+  min-width: 510px;
+  margin-left: auto;
   padding-top: 165px;
   padding-bottom: 249px;
-  background: url("../img/backgrounds/airplane.png") no-repeat;
-  background-size: 510px 285px;
-  background-position: 0 246px;
 }
 
 .form__fieldset {
@@ -2280,11 +2297,21 @@ button,
     padding-right: 400px;
   }
 
-  .form::after {
+  .form::before {
     background-image: unset;
   }
 
+  .form .container::before {
+    width: 0;
+    height: 0;
+    background: unset;
+  }
+
   .form__form {
+    min-width: unset;
+    width: unset;
+    max-width: unset;
+    margin-left: unset;
     padding-left: unset;
     background: unset;
     padding-top: 47px;
@@ -2293,6 +2320,7 @@ button,
 
   .form__fieldset {
     padding: 0;
+    min-width: 100%;
   }
 
   .form__legend {
@@ -2504,6 +2532,7 @@ button,
   }
 
   .main-screen {
+    padding-top: 70px;
     background-position-x: 24%;
     background-position-y: 50%;
     background-size: 378% auto;
@@ -2551,6 +2580,11 @@ button,
     content: "бесплатная консультация";
   }
 
+  .advantages {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
   .advantages__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2592,8 +2626,9 @@ button,
   }
 
   .about-company {
-    padding-top: 48px;
-    min-height: 435px;
+    min-height: 410px;
+    padding-top: 23px;
+    padding-bottom: 25px;
   }
 
   .about-company__year {
@@ -2631,7 +2666,7 @@ button,
   }
 
   .products-and-services {
-    padding: 48px 0 80px;
+    padding: 48px 0 86px;
   }
 
   .products-and-services__header {
@@ -2686,6 +2721,48 @@ button,
   .products-and-services__link::before {
     width: 40px;
     height: 40px;
+  }
+
+  .form__form {
+    padding-bottom: 86px;
+  }
+
+  .form__legend {
+    font-size: 30px;
+    line-height: 140.62%;
+  }
+
+  .form__description {
+    font-size: 14px;
+    line-height: 134.4%;
+  }
+
+  .form__inputs-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin-top: 36px;
+  }
+
+  .form__input-text,
+  .form__textarea {
+    width: 100%;
+  }
+
+  .form__textarea {
+    padding: 22px 14px;
+    min-height: 180px;
+  }
+
+  .form__buttons-wrap {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin: 0;
+    margin-top: 30px;
+    gap: 21px;
+  }
+
+  .form__agree-label {
+    padding: 0 5px;
   }
 }
 
@@ -2783,7 +2860,7 @@ button,
     background-image: linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background@2x.jpg");
   }
 
-  .form__form {
+  .form .container::before {
     background: url("../img/backgrounds/airplane@2x.png") no-repeat;
   }
 }
