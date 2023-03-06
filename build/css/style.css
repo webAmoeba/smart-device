@@ -747,22 +747,63 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
+  width: 500px;
   padding: 40px;
-  background-color: #f8fdff;
+  background-color: #00b2ff;
+  border-radius: 3px;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
-  z-index: 1;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
   width: 40px;
   height: 40px;
   padding: 0;
   background: transparent;
   border: none;
   cursor: pointer;
+}
+
+.modal__close-btn::before {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #ffffff;
+}
+
+.modal__close-btn::after {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #ffffff;
+}
+
+.modal__close-btn:hover {
+  opacity: 0.6;
+}
+
+.modal__close-btn:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+}
+
+.modal__close-btn:active {
+  opacity: 0.3;
 }
 
 .modal--responsive .modal__content {
@@ -1811,7 +1852,7 @@ button,
   line-height: 51px;
 }
 
-.about-company__description {
+.about-company p {
   margin: 0;
   margin-bottom: 14px;
   line-height: 22px;
@@ -2232,6 +2273,86 @@ button,
   background: transparent url("../img/svg/bird-for-checkbox.svg") no-repeat center;
 }
 
+.modal-form.form::before {
+  display: none;
+}
+
+.modal-form__fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  border: none;
+}
+
+.modal-form__legend {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.modal-form__description {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal-form__inputs-grid {
+  margin-top: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-form__buttons-wrap {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-form__agree-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 8px;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.modal-form__agree-label:hover {
+  opacity: 0.6;
+}
+
+.modal-form__agree-label:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+}
+
+.modal-form__agree-label:active {
+  opacity: 0.3;
+}
+
+.modal-form__agree-label:focus-within {
+  outline: 3px solid #041827;
+  outline-offset: 6px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2445,7 +2566,7 @@ button,
     top: 10px;
   }
 
-  .about-company__description {
+  .about-company p {
     margin-bottom: 10px;
   }
 
@@ -2844,7 +2965,7 @@ button,
     line-height: 140%;
   }
 
-  .about-company__description {
+  .about-company p {
     font-size: 14px;
     line-height: 134.4%;
   }

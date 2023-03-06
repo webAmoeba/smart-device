@@ -1,5 +1,5 @@
 const button = document.querySelector('.about-company__button');
-const descriptions = document.querySelectorAll('.about-company__description');
+const descriptions = document.querySelectorAll('.about-company p');
 const mobileDescriptions = document.querySelectorAll('.about-company__mobile-description');
 
 button.style.display = 'flex';

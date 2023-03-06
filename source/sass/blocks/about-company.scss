@@ -76,14 +76,10 @@
   }
 }
 
-.about-company__description {
+.about-company p {
   margin: 0;
   margin-bottom: 14px;
   line-height: 22px;
-
-  &--hidden {
-    @include visually-hidden;
-  }
 
   @include vp-1023 {
     margin-bottom: 10px;
@@ -93,6 +89,10 @@
     font-size: 14px;
     line-height: 134.4%;
   }
+}
+
+.about-company__description--hidden {
+  @include visually-hidden;
 }
 
 .about-company__mobile-description {

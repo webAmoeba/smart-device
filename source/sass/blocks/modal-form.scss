@@ -1,0 +1,72 @@
+.modal-form.form {
+  &::before {
+    display: none;
+  }
+}
+
+.modal-form__fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  border: none;
+}
+
+.modal-form__legend {
+  margin: 0;
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.modal-form__description {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal-form__inputs-grid {
+  margin-top: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-form__input-text {
+}
+
+.modal-form__textarea {
+}
+
+.modal-form__buttons-wrap {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-form__button {
+}
+
+.modal-form__agree-label {
+  display: flex;
+  padding: 0 8px;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 4px;
+
+  @include behavior;
+
+  &:focus-within {
+    outline: 3px solid $main-color;
+    outline-offset: 6px;
+  }
+}
+
+.modal-form__agree-checkbox {
+}
+
+.modal-form__custom-checkbox {
+}

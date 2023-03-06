@@ -56,7 +56,7 @@
             <span class="visually-hidden">Позвонить по телефону:</span>
             <span class="main-header__link-text">+7 (495) 000 52 52</span>
           </a>
-          <button class="main-header__button" type="button">Заказать звонок</button>
+          <button class="main-header__button" type="button" data-open-modal="feedback">Заказать звонок</button>
         </div>
       </div>
     </header>
@@ -122,11 +122,11 @@
         <div class="about-company__grid container">
           <div class="about-company__year" aria-hidden="true">2022</div>
           <h2 class="about-company__header">О компании</h2>
-          <p class="about-company__description">
+          <p>
             Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
             года. Выполняем срочные заказы и пилотные образцы до 10 дней.
           </p>
-          <p class="about-company__description">
+          <p>
             Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
             <!--
               Класс для скрытия части текста на мобилке
@@ -143,10 +143,10 @@
             Класс для скрытия абзаца
             about-company__description- -hidden
            -->
-          <p class="about-company__description ">
+          <p>
             Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
           </p>
-          <p class="about-company__description ">
+          <p>
             Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов.
           </p>
           <button class="about-company__button" type="button" aria-hidden="true">подробнее</button>
@@ -248,7 +248,10 @@
               main-footer__section-header- -open
              -->
           <section class="main-footer__container main-footer__section main-footer__site-sections">
-            <button class="main-footer__accordion-toggler" type="button" aria-hidden="true"></button>
+            <!-- Текстовое описание для элемента с классом main-footer__accordion-toggler не нужно, эта кнопка только для визуального эффекта -->
+            <button class="main-footer__accordion-toggler" type="button" aria-hidden="true">
+              <span class="visually-hidden" aria-hidden="true">Только визуальная кнопка</span>
+            </button>
             <h2 class="main-footer__section-header main-footer__section-header--open">Разделы сайта</h2>
             <div class="main-footer__site-sections-parts main-footer__accordion ">
               <div class="main-footer__site-sections-part">
@@ -267,7 +270,10 @@
           </section>
 
           <section class="main-footer__container main-footer__section main-footer__our-office">
-            <button class="main-footer__accordion-toggler" type="button" aria-hidden="true"></button>
+            <!-- Текстовое описание для элемента с классом main-footer__accordion-toggler не нужно, эта кнопка только для визуального эффекта -->
+            <button class="main-footer__accordion-toggler" type="button" aria-hidden="true">
+              <span class="visually-hidden" aria-hidden="true">Только визуальная кнопка</span>
+            </button>
             <h2 class="main-footer__section-header main-footer__section-header--open">Наш офис</h2>
             <div class="main-footer__site-sections-part main-footer__accordion ">
               <a class="main-footer__site-sections-item main-footer__site-sections-item--address"
@@ -287,31 +293,34 @@
     </footer>
   </div>
 
-  <!-- Модалки -->
   <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal></button>
 
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
+        <div class="modal__form form modal-form">
+          <form class="modal-form__form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="modal-form__fieldset">
+              <legend class="modal-form__legend">Закажите звонок</legend>
+              <p class="modal-form__description">Оставьте контакты, мы&nbsp;проконсультируем вас&nbsp;бесплатно в&nbsp;удобное время</p>
+              <div class="modal-form__inputs-grid">
+                <input class="form__input-text modal-form__input-text" name="name-from-modal" type="text" placeholder="Имя" required>
+                <input class="form__input-text modal-form__input-text" name="phone-from-modal" type="number" placeholder="Телефон" required>
+                <textarea class="form__textarea modal-form__textarea" name="question-from-modal" cols="30" rows="4" placeholder="Ваш вопрос"></textarea>
+              </div>
+              <div class="modal-form__buttons-wrap">
+                <button class="form__button modal-form__button" type="submit">отправить</button>
+                <label class="modal-form__agree-label">
+                  <input class="form__agree-checkbox" type="checkbox" name="agreement-from-modal"
+                  value="agree" required>
+                  <span class="form__custom-checkbox"></span>
+                  <span>Я согласен на обработку  персональных данных</span>
+                </label>
+              </div>
+            </fieldset>
+          </form>
+        </div>
       </div>
     </div>
   </div>
