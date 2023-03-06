@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>smart device</title>
 
@@ -66,7 +66,7 @@
         <div class="main-screen__grid container">
           <span class="main-screen__title">печатные платы</span>
           <h1 class="main-screen__header">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</h1>
-          <a class="main-screen__consultation-button" href="#"><span>Получить бесплатную консультацию</span></a>
+          <a class="main-screen__consultation-button" href="#free-consultation"><span>Получить бесплатную консультацию</span></a>
         </div>
       </div>
 
@@ -141,7 +141,7 @@
           </p>
           <!--
             Класс для скрытия абзаца
-            about-company__description--hidden
+            about-company__description- -hidden
            -->
           <p class="about-company__description ">
             Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
@@ -171,7 +171,7 @@
       </section>
 
 
-      <section class="form">
+      <div class="form" id="free-consultation">
         <div class="container">
           <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="form__fieldset">
@@ -180,7 +180,7 @@
               <div class="form__inputs-grid">
                 <input class="form__input-text" name="name" type="text" placeholder="Имя" required>
                 <input class="form__input-text" name="phone" type="number" placeholder="Телефон" required>
-                <textarea class="form__textarea" name="question" id="" cols="30" rows="4" placeholder="Ваш вопрос" required></textarea>
+                <textarea class="form__textarea" name="question" cols="30" rows="4" placeholder="Ваш вопрос"></textarea>
               </div>
               <div class="form__buttons-wrap">
                 <button class="form__button" type="submit">задать вопрос</button>
@@ -194,10 +194,9 @@
             </fieldset>
           </form>
         </div>
-      </section>
-
-
+      </div>
     </main>
+
     <footer class="main-footer">
       <div class="container">
         <div class="main-footer__grid-wrapper">
@@ -243,10 +242,10 @@
           <!--
               классы для управления аккордионом:
               для скрытия контента:
-              main-footer__accordion--hidden
+              main-footer__accordion- -hidden
 
               для смены + и -:
-              main-footer__section-header--open
+              main-footer__section-header- -open
              -->
           <section class="main-footer__container main-footer__section main-footer__site-sections">
             <button class="main-footer__accordion-toggler" type="button" aria-hidden="true"></button>

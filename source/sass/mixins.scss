@@ -131,5 +131,23 @@
   clip-path: inset(100%);
 }
 
+
+@mixin behavior($first-shadow-behavior: $main-color, $second-shadow-behavior: $third-color) {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow:
+      0 0 0 4px $first-shadow-behavior,
+      0 0 0 6px $second-shadow-behavior;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 // не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
 // этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта

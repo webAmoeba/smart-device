@@ -125,6 +125,7 @@
   text-transform: uppercase;
   border: 1px solid $third-color;
   border-radius: 3px;
+  user-select: none;
   cursor: pointer;
 
   @include vp-1023 {
@@ -136,4 +137,6 @@
     min-width: 160px;
     min-height: 35px;
   }
+
+  @include behavior;
 }

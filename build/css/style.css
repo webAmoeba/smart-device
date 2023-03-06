@@ -438,6 +438,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1339,6 +1340,20 @@ button,
   grid-column: 1/4;
 }
 
+.main-header__main-logo-link:hover {
+  opacity: 0.6;
+}
+
+.main-header__main-logo-link:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+}
+
+.main-header__main-logo-link:active {
+  opacity: 0.3;
+}
+
 .main-header__main-logo {
   width: 215px;
   height: 55px;
@@ -1359,6 +1374,20 @@ button,
   padding: 0 2px 6px;
   color: #f2f5f7;
   line-height: 18px;
+}
+
+.main-header__link:hover {
+  opacity: 0.6;
+}
+
+.main-header__link:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+}
+
+.main-header__link:active {
+  opacity: 0.3;
 }
 
 .main-header__email {
@@ -1393,7 +1422,25 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #f2f5f7;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
+}
+
+.main-header__button:hover {
+  opacity: 0.6;
+}
+
+.main-header__button:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+}
+
+.main-header__button:active {
+  opacity: 0.3;
 }
 
 .main-footer {
@@ -1431,6 +1478,20 @@ button,
   line-height: 0;
 }
 
+.main-footer__main-logo-link:hover {
+  opacity: 0.6;
+}
+
+.main-footer__main-logo-link:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+}
+
+.main-footer__main-logo-link:active {
+  opacity: 0.3;
+}
+
 .main-footer__main-logo {
   width: 215px;
   height: 55px;
@@ -1462,6 +1523,20 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.main-footer__social-link:hover {
+  opacity: 0.6;
+}
+
+.main-footer__social-link:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+}
+
+.main-footer__social-link:active {
+  opacity: 0.3;
 }
 
 .main-footer__site-sections {
@@ -1510,6 +1585,20 @@ button,
   font-size: 16px;
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.main-footer__site-sections-item:hover {
+  opacity: 0.6;
+}
+
+.main-footer__site-sections-item:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+}
+
+.main-footer__site-sections-item:active {
+  opacity: 0.3;
 }
 
 .main-footer__our-office {
@@ -1582,6 +1671,25 @@ button,
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.main-screen__consultation-button:hover {
+  opacity: 0.6;
+}
+
+.main-screen__consultation-button:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+}
+
+.main-screen__consultation-button:active {
+  opacity: 0.3;
 }
 
 .advantages {
@@ -1752,7 +1860,25 @@ button,
   text-transform: uppercase;
   border: 1px solid #00b2ff;
   border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
+}
+
+.about-company__button:hover {
+  opacity: 0.6;
+}
+
+.about-company__button:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+}
+
+.about-company__button:active {
+  opacity: 0.3;
 }
 
 .products-and-services {
@@ -1817,6 +1943,11 @@ button,
   font-size: 20px;
   line-height: 30px;
   color: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
 
 .products-and-services__link::before {
@@ -1829,6 +1960,20 @@ button,
   border-radius: 3px 0 0 0;
   background: #00b2ff url("../img/svg/product-service.svg") no-repeat center;
   background-size: 8px 8px;
+}
+
+.products-and-services__link:hover {
+  opacity: 0.6;
+}
+
+.products-and-services__link:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+}
+
+.products-and-services__link:active {
+  opacity: 0.3;
 }
 
 .form {
@@ -1950,6 +2095,23 @@ button,
   color: #f2f5f7;
 }
 
+.form__input-text:hover,
+.form__textarea:hover {
+  opacity: 0.6;
+}
+
+.form__input-text:focus-visible,
+.form__textarea:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+}
+
+.form__input-text:active,
+.form__textarea:active {
+  opacity: 0.3;
+}
+
 .form__textarea {
   grid-column: 1/-1;
   padding: 22px 14px;
@@ -1982,6 +2144,25 @@ button,
   border: none;
   border-radius: 3px;
   background-color: #041827;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  opacity: 0.6;
+}
+
+.form__button:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #00b2ff, 0 0 0 6px #041827;
+  box-shadow: 0 0 0 4px #00b2ff, 0 0 0 6px #041827;
+}
+
+.form__button:active {
+  opacity: 0.3;
 }
 
 .form__agree-label {
@@ -1993,7 +2174,30 @@ button,
   align-items: center;
   font-size: 14px;
   line-height: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
+}
+
+.form__agree-label:hover {
+  opacity: 0.6;
+}
+
+.form__agree-label:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+}
+
+.form__agree-label:active {
+  opacity: 0.3;
+}
+
+.form__agree-label:focus-within {
+  outline: 3px solid #041827;
+  outline-offset: 6px;
 }
 
 .form__agree-checkbox {

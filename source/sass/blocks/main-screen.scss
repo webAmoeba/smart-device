@@ -102,6 +102,8 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  user-select: none;
+  cursor: pointer;
 
   @include vp-1023 {
     margin-top: 57px;
@@ -124,4 +126,6 @@
       content: "бесплатная консультация";
     }
   }
+
+  @include behavior;
 }

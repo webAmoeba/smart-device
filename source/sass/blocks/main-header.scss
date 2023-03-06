@@ -46,6 +46,8 @@
   line-height: 0;
   grid-column: 1/4;
 
+  @include behavior;
+
   @include vp-1023 {
     margin-right: auto;
   }
@@ -79,6 +81,8 @@
     margin-right: 10px;
     margin-left: 10px;
   }
+
+  @include behavior;
 }
 
 .main-header__email {
@@ -106,11 +110,14 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $second-color;
+  user-select: none;
   cursor: pointer;
 
   @include vp-1023 {
     display: none;
   }
+
+  @include behavior;
 }
 
 .main-header__link-text {
