@@ -42,9 +42,7 @@ $half: 50.7%;
     }
 
     @include vp-1023 {
-      width: 0;
-      height: 0;
-      background: unset;
+      display: none;
     }
   }
 }

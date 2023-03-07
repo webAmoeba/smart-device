@@ -764,6 +764,7 @@ button,
   background: transparent;
   border: none;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .modal__close-btn::before {
@@ -2627,9 +2628,7 @@ button,
   }
 
   .form .container::before {
-    width: 0;
-    height: 0;
-    background: unset;
+    display: none;
   }
 
   .form__form {
@@ -2797,8 +2796,7 @@ button,
   }
 
   .main-footer__section-header--open::before {
-    width: 0;
-    height: 0;
+    display: none;
   }
 
   .main-footer__site-sections-parts {
