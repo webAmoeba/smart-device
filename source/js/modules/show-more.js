@@ -5,7 +5,7 @@ const mobileDescriptions = document.querySelectorAll('.about-company__mobile-des
 button.style.display = 'flex';
 
 if (descriptions) {
-  descriptions.forEach((elem, index) => index > 1 ? elem.classList.add('about-company__description--hidden') : '');
+  descriptions.forEach((elem, index) => index > 1 ? elem.classList.add('about-company__description-hidden') : '');
 }
 
 if (mobileDescriptions) {
@@ -16,7 +16,7 @@ const showMore = () => {
   button.addEventListener('click', () => {
     if (button.classList.contains('about-company__button--rollup')) {
       if (descriptions) {
-        descriptions.forEach((elem, index) => index > 1 ? elem.classList.add('about-company__description--hidden') : '');
+        descriptions.forEach((elem, index) => index > 1 ? elem.classList.add('about-company__description-hidden') : '');
       }
       if (mobileDescriptions) {
         mobileDescriptions.forEach((elem) => elem.classList.add('about-company__mobile-description--hidden'));
@@ -29,7 +29,7 @@ const showMore = () => {
     } else {
 
       if (descriptions) {
-        descriptions.forEach((elem) => elem.classList.remove('about-company__description--hidden'));
+        descriptions.forEach((elem) => elem.classList.remove('about-company__description-hidden'));
       }
       if (mobileDescriptions) {
         mobileDescriptions.forEach((elem) => elem.classList.remove('about-company__mobile-description--hidden'));
