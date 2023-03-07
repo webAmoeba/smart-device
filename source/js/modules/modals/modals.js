@@ -169,9 +169,11 @@ export class Modals {
       this._addListeners(modal);
       this._autoPlay(modal);
       document.addEventListener('click', this._documentClickHandler);
-      focusedElement && focusedElement.focus()
+      if (focusedElement) {
+        focusedElement.focus();
+      }
     }, this._eventTimeout);
-
+  }
 
   close(modalName = this._modalName) {
     const modal = document.querySelector(`[data-modal="${modalName}"]`);
