@@ -1679,7 +1679,8 @@ button,
   gap: 32px;
 }
 
-.main-screen span {
+.main-screen p {
+  margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -2520,7 +2521,7 @@ button,
     gap: unset;
   }
 
-  .main-screen span {
+  .main-screen p {
     font-size: 64px;
     line-height: 75px;
   }
@@ -2866,7 +2867,7 @@ button,
     gap: 8px;
   }
 
-  .main-screen span {
+  .main-screen p {
     font-size: 36px;
     line-height: 42px;
   }
