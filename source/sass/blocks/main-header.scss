@@ -93,7 +93,7 @@
   grid-column: 6/9;
 }
 
-.main-header__button {
+.main-header button {
   grid-column: 9/11;
   justify-self: start;
   padding: 11px 16px;
@@ -120,7 +120,7 @@
   @include behavior;
 }
 
-.main-header__link-text {
+.main-header__link span {
   @include vp-1023 {
     @include visually-hidden;
   }

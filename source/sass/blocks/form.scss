@@ -47,7 +47,7 @@ $half: 50.7%;
   }
 }
 
-.form__form {
+.form form {
   max-width: 604px;
   width: 50%;
   min-width: 510px;
@@ -71,7 +71,7 @@ $half: 50.7%;
   }
 }
 
-.form__fieldset {
+.form fieldset {
   margin: 0;
   border: none;
   padding: 0 12px;
@@ -82,7 +82,7 @@ $half: 50.7%;
   }
 }
 
-.form__legend {
+.form legend {
   margin: 0;
   margin-left: -6px;
   font-family: $roboto-condensed;
@@ -101,7 +101,7 @@ $half: 50.7%;
   }
 }
 
-.form__description {
+.form p {
   line-height: 22px;
   margin: 0;
   margin-top: 13px;
@@ -133,8 +133,8 @@ $half: 50.7%;
   }
 }
 
-.form__input-text,
-.form__textarea {
+.form input:not([type="checkbox"]),
+.form textarea {
   padding: 14px;
   font-family: $pt-mono;
   font-style: normal;
@@ -157,7 +157,7 @@ $half: 50.7%;
   @include behavior;
 }
 
-.form__textarea {
+.form textarea {
   grid-column: 1/-1;
   padding: 22px 14px;
   min-height: 155px;
@@ -194,7 +194,7 @@ $half: 50.7%;
   }
 }
 
-.form__button {
+.form button {
   padding: 13px;
   font-family: $roboto-condensed;
   font-style: normal;
@@ -238,7 +238,7 @@ $half: 50.7%;
   }
 }
 
-.form__agree-checkbox {
+.form__default-checkbox {
   position: absolute;
   appearance: none;
 
@@ -259,7 +259,7 @@ $half: 50.7%;
 
 
 ////// checked
-.form__agree-checkbox:checked ~ .form__custom-checkbox::before {
+.form__default-checkbox:checked ~ .form__custom-checkbox::before {
   position: absolute;
   content: "";
   width: 14px;

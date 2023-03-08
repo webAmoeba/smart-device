@@ -54,7 +54,7 @@
   }
 }
 
-.main-screen__title {
+.main-screen span {
   font-family: $roboto-condensed;
   font-style: normal;
   font-weight: 700;
@@ -74,7 +74,7 @@
   }
 }
 
-.main-screen__header {
+.main-screen h1 {
   margin: 0;
   font-weight: 400;
   font-size: 22px;
@@ -87,7 +87,7 @@
   }
 }
 
-.main-screen__consultation-button {
+.main-screen a {
   margin-top: 14px;
   align-self: flex-start;
   padding: 17px 27px;
