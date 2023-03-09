@@ -177,9 +177,12 @@
               <legend>Остались&nbsp;вопросы? Задайте&nbsp;их&nbsp;нам!</legend>
               <p>Мы проконсультируем Вас бесплатно</p>
               <div class="form__inputs-grid">
-                <input name="name" type="text" placeholder="Имя" required aria-label="Поле для ввода имени.">
-                <input name="phone" type="tel" placeholder="Телефон" required aria-label="Поле для ввода своего мобильного телефона.">
-                <textarea name="question" cols="30" rows="4" placeholder="Ваш вопрос" aria-label="Опишите свой вопрос здесь."></textarea>
+                <label class="visually-hidden" for="name-from-form">Поле для ввода имени.</label>
+                <input id="name-from-form" name="name" type="text" placeholder="Имя" required>
+                <label class="visually-hidden" for="phone-from-form">Поле для ввода своего мобильного телефона.</label>
+                <input id="phone-from-form" name="phone" type="tel" placeholder="Телефон" required>
+                <label class="visually-hidden" for="question-from-form">Опишите свой вопрос здесь.</label>
+                <textarea id="question-from-form" name="question" cols="30" rows="4" placeholder="Ваш вопрос"></textarea>
               </div>
               <div class="form__buttons-wrap">
                 <button type="submit">задать вопрос</button>
@@ -303,9 +306,12 @@
               <legend>Закажите звонок</legend>
               <p>Оставьте контакты, мы&nbsp;проконсультируем вас&nbsp;бесплатно в&nbsp;удобное время</p>
               <div class="modal-form__inputs-grid">
-                <input name="name-from-modal" type="text" placeholder="Имя" required data-focus autofocus aria-label="Поле для ввода имени.">
-                <input name="phone-from-modal" type="tel" placeholder="Телефон" required aria-label="Поле для ввода своего мобильного телефона.">
-                <textarea name="question-from-modal" cols="30" rows="4" placeholder="Ваш вопрос" aria-label="Опишите свой вопрос здесь."></textarea>
+                <label class="visually-hidden" for="name-from-modal">Поле для ввода имени.</label>
+                <input id="name-from-modal" name="name-from-modal" type="text" placeholder="Имя" required data-focus autofocus>
+                <label class="visually-hidden" for="phone-from-modal">Поле для ввода своего мобильного телефона.</label>
+                <input id="phone-from-modal" name="phone-from-modal" type="tel" placeholder="Телефон" required>
+                <label class="visually-hidden" for="question-from-modal">Опишите свой вопрос здесь.</label>
+                <textarea id="question-from-modal" name="question-from-modal" cols="30" rows="4" placeholder="Ваш вопрос"></textarea>
               </div>
               <div class="modal-form__buttons-wrap">
                 <button type="submit">отправить</button>
