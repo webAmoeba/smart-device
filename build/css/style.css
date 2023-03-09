@@ -2275,18 +2275,18 @@ button,
   background: transparent url("../img/svg/bird-for-checkbox.svg") no-repeat center;
 }
 
-.modal-form.form::before {
-  display: none;
+.modal-form {
+  color: #f2f5f7;
 }
 
-.modal-form__fieldset {
+.modal-form fieldset {
   margin: 0;
   padding: 0;
   min-width: 100%;
   border: none;
 }
 
-.modal-form__legend {
+.modal-form legend {
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -2295,7 +2295,7 @@ button,
   line-height: 1.1;
 }
 
-.modal-form__description {
+.modal-form p {
   margin: 0;
   margin-top: 10px;
   font-size: 16px;
@@ -2326,7 +2326,7 @@ button,
   gap: 20px;
 }
 
-.modal-form__agree-label {
+.modal-form label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2336,23 +2336,151 @@ button,
   margin-bottom: 4px;
 }
 
-.modal-form__agree-label:hover {
+.modal-form label:hover {
   opacity: 0.6;
 }
 
-.modal-form__agree-label:focus-visible {
+.modal-form label:focus-visible {
   outline: none;
   -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
   box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
 }
 
-.modal-form__agree-label:active {
+.modal-form label:active {
   opacity: 0.3;
 }
 
-.modal-form__agree-label:focus-within {
+.modal-form label:focus-within {
   outline: 3px solid #041827;
   outline-offset: 6px;
+}
+
+.modal-form input:not([type=checkbox]),
+.modal-form textarea {
+  padding: 14px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #041827;
+  background-color: rgba(4, 20, 39, 0.15);
+  border: none;
+  border-radius: 3px;
+}
+
+.modal-form input:not([type=checkbox])::-webkit-input-placeholder,
+.modal-form textarea::-webkit-input-placeholder {
+  color: #f2f5f7;
+}
+
+.modal-form input:not([type=checkbox])::-moz-placeholder,
+.modal-form textarea::-moz-placeholder {
+  color: #f2f5f7;
+}
+
+.modal-form input:not([type=checkbox]):-ms-input-placeholder,
+.modal-form textarea:-ms-input-placeholder {
+  color: #f2f5f7;
+}
+
+.modal-form input:not([type=checkbox])::-ms-input-placeholder,
+.modal-form textarea::-ms-input-placeholder {
+  color: #f2f5f7;
+}
+
+.modal-form input:not([type=checkbox])::placeholder,
+.modal-form textarea::placeholder {
+  color: #f2f5f7;
+}
+
+.modal-form input:not([type=checkbox]):hover,
+.modal-form textarea:hover {
+  opacity: 0.6;
+}
+
+.modal-form input:not([type=checkbox]):focus-visible,
+.modal-form textarea:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+}
+
+.modal-form input:not([type=checkbox]):active,
+.modal-form textarea:active {
+  opacity: 0.3;
+}
+
+.modal-form textarea {
+  padding: 22px 14px;
+  min-height: 155px;
+}
+
+.modal-form__default-checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.modal-form__default-checkbox:focus-visible {
+  outline: 0;
+}
+
+.modal-form button {
+  padding: 13px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  background-color: #041827;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.modal-form button:hover {
+  opacity: 0.6;
+}
+
+.modal-form button:focus-visible {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 4px #00b2ff, 0 0 0 6px #041827;
+  box-shadow: 0 0 0 4px #00b2ff, 0 0 0 6px #041827;
+}
+
+.modal-form button:active {
+  opacity: 0.3;
+}
+
+.modal-form__custom-checkbox {
+  position: relative;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 11px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+.modal-form__default-checkbox:checked ~ .modal-form__custom-checkbox::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 0;
+  left: 0;
+  background: transparent url("../img/svg/bird-for-checkbox.svg") no-repeat center;
 }
 
 /* @mixin hover-focus {
@@ -3087,6 +3215,11 @@ button,
 
   .form__agree-label {
     padding: 0 5px;
+  }
+
+  .modal-form input:not([type=checkbox]),
+  .modal-form textarea {
+    width: 100%;
   }
 }
 
