@@ -2967,6 +2967,20 @@ button,
     border: none;
   }
 
+  .main-footer__accordion-toggler:hover {
+    opacity: 0.6;
+  }
+
+  .main-footer__accordion-toggler:focus-visible {
+    outline: none;
+    -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+    box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+  }
+
+  .main-footer__accordion-toggler:active {
+    opacity: 0.3;
+  }
+
   .main-footer__accordion {
     margin-top: 15px;
   }
