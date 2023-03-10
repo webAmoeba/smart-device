@@ -61,18 +61,21 @@
   max-width: 350px;
   width: 100%;
   background-color: $color-neon-blue;
-  background-image:
-    linear-gradient(rgba(4, 24, 39, 0.5)),
-    url("../img/backgrounds/main-background.jpg");
+
   background-position-x: 17%;
   background-position-y: bottom;
   background-size: auto 108%;
 
-
-  @media (min-resolution: $retina-dppx) {
+  @include vp-1024 {
     background-image:
       linear-gradient(rgba(4, 24, 39, 0.5)),
-      url("../img/backgrounds/main-background@2x.jpg");
+      url("../img/backgrounds/main-background.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(rgba(4, 24, 39, 0.5)),
+        url("../img/backgrounds/main-background@2x.jpg");
+    }
   }
 
   &--second {
@@ -93,18 +96,20 @@
 
   @include vp-1023 {
     max-width: unset;
-    background-image:
-      linear-gradient(rgba(4, 24, 39, 0.5)),
-      url("../img/backgrounds/main-background-tablet.jpg");
-    background-position-x: 29%;
-    background-position-y: 97%;
     background-size: unset;
+    background-position-x: 30%;
+    background-position-y: 97%;
 
-
-    @media (min-resolution: $retina-dppx) {
+    @include vp-768 {
       background-image:
         linear-gradient(rgba(4, 24, 39, 0.5)),
-        url("../img/backgrounds/main-background-tablet@2x.jpg");
+        url("../img/backgrounds/main-background-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient(rgba(4, 24, 39, 0.5)),
+          url("../img/backgrounds/main-background-tablet@2x.jpg");
+      }
     }
 
     &--second {
@@ -119,17 +124,27 @@
   }
 
   @include vp-767 {
-    background-position-x: 31%;
+    background-image:
+      linear-gradient(rgba(4, 24, 39, 0.5)),
+      url("../img/backgrounds/main-background-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(rgba(4, 24, 39, 0.5)),
+        url("../img/backgrounds/main-background-mobile@2x.jpg");
+    }
+
+    background-position-x: 46%;
     background-position-y: 53%;
 
     &--second {
-      background-position-x: 30%;
-      background-position-y: 95%;
+      background-position-x: 46%;
+      background-position-y: bottom;
     }
 
     &--third {
-      background-position-x: 72%;
-      background-position-y: 69%;
+      background-position-x: left;
+      background-position-y: 53%;
     }
   }
 }
