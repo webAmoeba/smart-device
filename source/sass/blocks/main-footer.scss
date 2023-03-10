@@ -246,7 +246,18 @@
     z-index: 1;
     border: none;
 
-    @include behavior;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus-visible {
+      outline: 3px solid $third-color;
+      outline-offset: -12px;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -255,7 +266,7 @@
     margin-top: 15px;
 
     &--hidden {
-      @include visually-hidden;
+      display: none;
     }
   }
 }

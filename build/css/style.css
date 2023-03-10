@@ -2973,9 +2973,8 @@ button,
   }
 
   .main-footer__accordion-toggler:focus-visible {
-    outline: none;
-    -webkit-box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
-    box-shadow: 0 0 0 4px #041827, 0 0 0 6px #00b2ff;
+    outline: 3px solid #00b2ff;
+    outline-offset: -12px;
   }
 
   .main-footer__accordion-toggler:active {
@@ -2987,17 +2986,7 @@ button,
   }
 
   .main-footer__accordion--hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    border: 0;
-    clip: rect(0 0 0 0);
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
+    display: none;
   }
 
   .main-screen {
