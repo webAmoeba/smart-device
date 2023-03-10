@@ -37,8 +37,10 @@ $half: 50.7%;
     background-position: 50px 246px;
     z-index: -1;
 
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: 2dppx) {
       background: url("../img/backgrounds/airplane@2x.png") no-repeat;
+      background-size: 85.9% auto;
+      background-position: 50px 246px;
     }
 
     @include vp-1023 {

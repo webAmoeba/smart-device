@@ -66,6 +66,7 @@
   background-position-y: bottom;
   background-size: auto 108%;
 
+
   @include vp-1024 {
     background-image:
       linear-gradient(rgba(4, 24, 39, 0.5)),
@@ -96,9 +97,19 @@
 
   @include vp-1023 {
     max-width: unset;
-    background-size: unset;
+    background-size: 224% auto;
     background-position-x: 30%;
     background-position-y: 97%;
+
+    &--second {
+      background-position-x: 77%;
+      background-position-y: 56%;
+    }
+
+    &--third {
+      background-position-x: 18%;
+      background-position-y: 63%;
+    }
 
     @include vp-768 {
       background-image:
@@ -111,19 +122,23 @@
           url("../img/backgrounds/main-background-tablet@2x.jpg");
       }
     }
-
-    &--second {
-      background-position-x: 77%;
-      background-position-y: 56%;
-    }
-
-    &--third {
-      background-position-x: 18%;
-      background-position-y: 63%;
-    }
   }
 
   @include vp-767 {
+    background-size: 300% auto;
+    background-position-x: 44%;
+    background-position-y: 53%;
+
+    &--second {
+      background-position-x: 46%;
+      background-position-y: 100%;
+    }
+
+    &--third {
+      background-position-x: left;
+      background-position-y: 53%;
+    }
+
     background-image:
       linear-gradient(rgba(4, 24, 39, 0.5)),
       url("../img/backgrounds/main-background-mobile.jpg");
@@ -132,19 +147,6 @@
       background-image:
         linear-gradient(rgba(4, 24, 39, 0.5)),
         url("../img/backgrounds/main-background-mobile@2x.jpg");
-    }
-
-    background-position-x: 46%;
-    background-position-y: 53%;
-
-    &--second {
-      background-position-x: 46%;
-      background-position-y: bottom;
-    }
-
-    &--third {
-      background-position-x: left;
-      background-position-y: 53%;
     }
   }
 }

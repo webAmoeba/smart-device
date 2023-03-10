@@ -1838,6 +1838,7 @@ button,
   font-size: 156px;
   line-height: 220px;
   background-color: #00b2ff;
+  background-size: 270% auto;
   background-image: url("../img/backgrounds/year.jpg");
   background-position: 40% 20%;
 }
@@ -2747,7 +2748,7 @@ button,
 
   .products-and-services__item {
     max-width: unset;
-    background-size: unset;
+    background-size: 224% auto;
     background-position-x: 30%;
     background-position-y: 97%;
   }
@@ -3169,16 +3170,17 @@ button,
   }
 
   .products-and-services__item {
+    background-size: 300% auto;
+    background-position-x: 44%;
+    background-position-y: 53%;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5))), url("../img/backgrounds/main-background-mobile.jpg");
     background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-mobile.jpg");
     background-image: linear-gradient(rgba(4, 24, 39, 0.5)), url("../img/backgrounds/main-background-mobile.jpg");
-    background-position-x: 46%;
-    background-position-y: 53%;
   }
 
   .products-and-services__item--second {
     background-position-x: 46%;
-    background-position-y: bottom;
+    background-position-y: 100%;
   }
 
   .products-and-services__item--third {
@@ -3368,8 +3370,12 @@ button,
   .about-company__year {
     background-image: url("../img/backgrounds/year@2x.jpg");
   }
+}
 
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .form .container::before {
     background: url("../img/backgrounds/airplane@2x.png") no-repeat;
+    background-size: 85.9% auto;
+    background-position: 50px 246px;
   }
 }
