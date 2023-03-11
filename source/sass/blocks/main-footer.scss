@@ -76,6 +76,7 @@
   margin-top: 30px;
   padding-left: 10px;
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
 
   @include vp-1023 {
@@ -178,6 +179,7 @@
   margin-top: 24px;
   display: flex;
   flex-direction: column;
+  align-items: start;
   row-gap: 10px;
 
   @include vp-1023 {
@@ -187,6 +189,7 @@
 
   @include vp-767 {
     row-gap: 10px;
+    align-items: unset;
   }
 }
 

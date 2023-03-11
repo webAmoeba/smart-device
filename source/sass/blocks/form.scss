@@ -20,6 +20,18 @@ $half: 50.7%;
       background-image: unset;
     }
   }
+
+  .input-message {
+    margin-top: 5px;
+
+    &.is-invalid {
+      color: #ffe600;
+    }
+
+    &.is-valid {
+      color: #ffff00;
+    }
+  }
 }
 
 .form .container {
@@ -137,6 +149,7 @@ $half: 50.7%;
 
 .form input:not([type="checkbox"]),
 .form textarea {
+  width: 100%;
   padding: 14px;
   font-family: $pt-mono;
   font-style: normal;
@@ -194,6 +207,10 @@ $half: 50.7%;
     margin-top: 30px;
     gap: 21px;
   }
+
+  button {
+    order: -1;
+  }
 }
 
 .form button {
@@ -218,11 +235,17 @@ $half: 50.7%;
 
 .form__agree-label {
   display: flex;
+  position: relative;
   align-items: center;
   font-size: 14px;
   line-height: 16px;
   user-select: none;
   cursor: pointer;
+
+  .input-message {
+    position: absolute;
+    top: 30px;
+  }
 
   @include vp-1023 {
     margin-top: 5px;

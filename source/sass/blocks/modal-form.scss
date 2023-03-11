@@ -1,5 +1,17 @@
 .modal-form {
   color: $second-color;
+
+  .input-message {
+    margin-top: 5px;
+
+    &.is-invalid {
+      color: #ffe600;
+    }
+
+    &.is-valid {
+      color: #ffff00;
+    }
+  }
 }
 
 .modal-form fieldset {
@@ -40,12 +52,19 @@
 }
 
 
-.modal-form label {
+.modal-form__agree-label {
   display: flex;
+  position: relative;
   padding: 0 8px;
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 4px;
+  order: 1;
+
+  .input-message {
+    position: absolute;
+    top: 18px;
+  }
 
   @include behavior;
 
@@ -57,6 +76,7 @@
 
 .modal-form input:not([type="checkbox"]),
 .modal-form textarea {
+  width: 100%;
   padding: 14px;
   font-family: $pt-mono;
   font-style: normal;
