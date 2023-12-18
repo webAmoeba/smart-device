@@ -1,3 +1,5 @@
+[gh page](https://webamoeba.github.io/smart-device/)
+
 ## Краткая инструкция по работе
 Для начала работы у вас должент быть установлен **Node.js**
 
