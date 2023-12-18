@@ -1,9 +1,0 @@
-.main__screen {
-  @include vp-1023 {
-    margin-top: -100px;
-  }
-
-  @include vp-767 {
-    margin-top: -70px;
-  }
-}
